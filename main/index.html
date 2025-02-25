@@ -45,7 +45,7 @@
     <p>per \(n=1\) si ha che \( r_1=a_0 \text{(raggio di Bohr)}=\frac{4\pi \varepsilon_0 \hbar^2}{Z e^2 m}\) si trova che \(a_0 \sim 0.53 \overset{o}{\text{A}}\) e \(v_{n=1} \sim 10^6 \frac{m}{sec}\) </p>
     <p>\(E=\frac{1}{2} m v_n^2- \frac{Ze^2}{4\pi \varepsilon_0 r_n}=-\frac{m}{2} {\left( \frac{Ze^2}{4\pi \varepsilon_0}\right)}^2\frac{1}{n^2}\)</p>
     <p>Quando n va all'infinito l'energia va zero</p>
-    <p>Per n=1 e Z=1, \(E_1=-13.6 eV=1Ry=\frac{1}{2} Ha\) che è l'energia dello stato fondamentale dell'atomo di idrogeno, che chiamiamo un 1 Rydberg o mezzo Hattry</p>
+    <p>Per n=1 e Z=1, \(E_1=-13.6 eV=1Ry=\frac{1}{2} Ha\) che è l'energia dello stato fondamentale dell'atomo di idrogeno, che chiamiamo un 1 Rydberg o mezzo Hattry (Rydberg\(\equiv\)unità atomiche)</p>
     <p>Per n=2 e Z=1, \(E_2=-3.39 eV \)</p>
     <p>Per n=3 e Z=1, \(E_3=-1.51 eV\)</p>
 <p>Un elettrone assorbito/emesso può essere avere energia pari alla differenza di questi livelli</p>
@@ -63,17 +63,30 @@
     <p class="hover-effect"   onmouseover="this.textContent='...............'"  onmouseout="this.textContent='____________'">_________________</p> 
     <p>\(\hat{H}=\frac{\hat{\vec{p}}^2}{2 \mu}+\hat{V}(\hat{\vec{x}})  \hat{H}\ket{\Psi}=\ket{\Psi}\)\)</p>
     <p>\(\braket{\vec{x}}{\Psi}=\Psi (\vec{x})\)</p>
-    <p>\({-\frac{\hbar^2}{2\mu}\frac{1}{r}\frac{\partial^2}{\partial r^2} r-\frac{\hbar^2}{2\mu r^2}\left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\tehta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \phi^2}\right]+V(r)}\Psi(r,\theta,\phi)=E\Psi(r,\theta,\phi)\)</p>
-    <p>\(\hat{H}=\frac{\hat{p_r}^2}{2\mu}+\frac{\hat{L}^2}{2\mur^2}+\hat{V}(r)=\frac{\hat{p_r}^2}{2\mu}+\hat{V_{eff}}(r)\)</p>
-    <p>\(\Psi(\r,\theta,\phi)=\braket{\vec{x}}{\Psi}=R(r)Y(\theta,\phi)\)</p>
-    <p>\(\hbar^2 \left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\tehta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \phi^2}\right]=\hat{L}^2\)</p>
-    <p>\(\hat{L}^2\ket{l,m_l}=\habr^2 l (l+1)\ket{l,m_L}\)</p>
-    <p>\(\hat{L_z}=-i\habr\frac{\partial}{\\partial \phi }\)</p>
+    <p>\({-\frac{\hbar^2}{2\mu}\frac{1}{r}\frac{\partial^2}{\partial r^2} r-\frac{\hbar^2}{2\mu r^2}\left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\theta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \phi^2}\right]+V(r)}\Psi(r,\theta,\phi)=E\Psi(r,\theta,\phi)\)</p>
+    <p>\(\hat{H}=\frac{\hat{p_r}^2}{2\mu}+\frac{\hat{L}^2}{2\mu r^2}+\hat{V}(r)=\frac{\hat{p_r}^2}{2\mu}+\hat{V_{eff}}(r)\)</p>
+    <p>\(\Psi(r,\theta,\phi)=\braket{\vec{x}}{\Psi}=R(r)Y(\theta,\phi)\)</p>
+    <p>\(\hbar^2 \left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\theta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \phi^2}\right]=\hat{L}^2\)</p>
+    <p>\(\hat{L}^2\ket{l,m_l}=\hbar^2 l (l+1)\ket{l,m_L}\)</p>
+    <p>\(\hat{L_z}=-i\hbar\frac{\partial}{\partial \phi }\)</p>
     <p>\(\hat{L_z}=\ket{l,m_l}=\hbar m_l\ket{l,m_l} \braket{\theta,\phi}{l,m_l}=Y_l^{m_l} (\theta,\phi)\)</p>
     <p>\(-\hbar^2\left[ \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} (\sin \theta \frac{\partial}{\partial \theta} )+\frac{1}{\sin^2 \theta} \frac{\partial^2}{\partial \phi^2}\right] Y_l^{m_l} (\theta,\phi) =\hbar^2 l(l+1) Y_l^{m_l} (\theta,\phi)-i\hbar \frac{\partial}{\partial \phi} Y_l^{m_l} (\theta,\phi)=\hbar m_l Y_l^{m_l} (\theta,\phi)\)</p>
 <p>\(Y_l^{m_l} (\theta,\phi)=\sqrt{\frac{(2l+1)(l-m_l)!}{4\pi(l+m_l)!}}P_l^{m_l}(\cos \theta)e^{i m_l \phi}\)</p>
     <p>il \(4 \pi\) ricorda l'angolo solido</p>
-    <p>se prendiamo due armoniche sferiche: \(\int_0^{\pi}\int_{\-pi}^{\pi}\sin \theta d\theta d\phiY_l^{m_l} (\theta,\phi)\)\(Y_{l'}^{m_l'} (\theta,\phi) =int_0^{\pi}\int_{\-pi}^{\pi} \d\Omega Y_l^{m_l} (\theta,\phi)Y_{l'}^{m_l'} (\theta,\phi)=\delta_{l,l'}\delta_{m_l,m_l'}\)</p>
+    <p>se prendiamo due armoniche sferiche: \(\int_0^{\pi}\int_{-\pi}^{\pi}\sin \theta d\theta d\phi Y_l^{m_l} (\theta,\phi)\)\(Y_{l'}^{m_l'} (\theta,\phi) =\int_0^{\pi}\int_{-\pi}^{\pi} d\Omega Y_l^{m_l} (\theta,\phi)Y_{l'}^{m_l'} (\theta,\phi)=\delta_{l,l'}\delta_{m_l,m_l'}\)</p>
+<p>\(Y_0^0 (\theta,\phi)=\frac{1}{\sqrt{4\pi}}\)</p>
+<p>\(Y_1^0 (\theta,\phi)=1/2 \sqrt{\frac{3}{\pi}} \cos \theta\)</p>
+<p>\(Y_1^1 (\theta,\phi)=1/2 \sqrt{\frac{3}{\pi}} e^{\pm i \phi}\)</p>
+    <p>\(\Psi (r, \theta,\phi)=R8R9Y_l^{m_l} (\theta,\phi) \)</p
+    <p>\(\left[- \frac{\hbar^2}{2\mu r}\frac{d^2}{dr^2}r +\underbrace{\frac{\hbar^2 l (l+1)}{2 \mu r^2} -\frac{Ze^2}{4 \pi \varepsilon_0 r}  }_{V_{eff}^l(r)}  \right] R(r)=E\cdot R(r)\)</p>
+    <p>\(R_{n,l}(r)=\frac{U(r)}{r}\), \(U_{n.l}\) con \(n=1,2,3\) e \(l \le n-1\)</p>
+    <p>\(\left[-\frac{\hbar^2}{2\mu}\frac{d^2}{dr^2}+V_{eff}^l (r)\right]U(r)=E U(r)\)</p>
+    <p>condizione al contorno: \(U(r)\rigthtarrow 0\)  \( r \rightarrow \infty\)</p>
+    <p>Possiamo parlare dei numeri quantici e hanno un valore perchè sì abbiamo un a equazione differenziabile ma soprattutto perchè ci sono queste cobndizoni al contorno: vogliamo soluzione che stanno nel potenziale, ma non deve collassare nel nucleo: quindi \(U^{l+1}(r)\rightarrow 0\)  \( r \rightarrow 0\) non ho probabilità di trovare l'elettrone nel nucleo. L'energia quantizzata e gli autovalori che ci ha dato Bohr: \(E_n=\frac{1}{2n^2}\frac{Z^2}{(4 \pi \varepsilon_0)^2}\frac{\mu e^4}{\hbar^2}\)</p>
+    <p>\(R_{n,l} (r)=\mathscr{C} e^{-\frac{Zr}{n ??}} {\left(\frac{?? Zr}{n??}\right)}^2 \mathscr{L}_{n-l-1}^{l(l+1)} \frac{2Zr}{n??}\)</p>
+    <p>\(R_{2,1} (r)=\frac{1}{\sqrt{24}} {\left(\frac{Z}{??}\right)}^{3/2}  \frac{Zr}{??}  e^{-\frac{Zr}{2??}}\)</p>
+
+
     
 </body>
 </html>
