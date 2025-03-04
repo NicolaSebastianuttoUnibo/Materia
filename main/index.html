@@ -155,6 +155,36 @@
     <p>\(\Delta E=\color{rgb(0,217,98)}\frac{1}{2}\color{black}\frac{g_s \mu_B}{emc^2\hbar}\frac{dV(r)}{dr} \frac{\vec{S}\cdot \vec{L}}{r}\)</p>
     <p>bisogna inserire una precessione di Thomas \color{rgb(0,217,98)}\frac{1}{2}</p><p>problema dei sistemi di riferimenti acceleratio</p>
 <p>\(\hat{H_{s_o}}=\frac{g_s \mu_B}{2 e mc^2 \hbar }\frac{d V(\hat{r})}{r}\frac{\hat{\vec{S}}\cdot\hat{\vec{L}}}{\hat{r}}\)</p>
+
+<p>_______</p>
     
+    <p>\(\mathsrc{J}_l^m (\theta, \phi) = \begin{cases} \sqrt{\frac{l+m_j+1/2}{2l+1}}Y_l^{m_l} \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sqrt{\frac{l-m_j+1/2}{2l+1}}+Y_l^{m_j+1/2} \begin{pmatrix}0\\1\end{pmatrix}  con j=l+1/2 && \sqrt{\frac{l-m_j+1/2}{2l+1}}Y_l^{m_l} \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sqrt{\frac{l+m_j+1/2}{2l+1}}+Y_l^{m_j+1/2} \begin{pmatrix}0\\1\end{pmatrix}  con j=l-1/2\end{cases}\)</p>
+    <p>\(D=e^{-\frac{\hat{\vec{S}}\cdot \vec{n}g}{\hbar}}\)  \(\hat{n}=\hat{n} (\theta, \phi)\)questo è il generatore delle traslazioni spaziali</p>
+    <p>\(D (\sigma_z) D (\sigma_y)  \begin{pmatrix} 1 \\ 0 \end{pmatrix}=\cos{\theta /2} e^{-i \Phi/2}  \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sin{\theta/2}e^{-i \Phi/2} \begin{pmatrix} 0 \\ 1 \end{pmatrix}\)</p>
+<h6>Notazione spettroscopica</h6>
+    <p>\(\begin{cases} l=0 \rightarrow s& l=1 \rightarrow p  l=2 \rightarrow d \text{(elementi di transizioni)}  l=3 \rightarrow f \text{(sia spinorbita sia interazione coulombiana)} \end{cases}\)</p>
+    <p>\(np_J\) per esempio \(2p_{3/2} \) che vuol dire che n=2 l=1 J=3/2</p>
+    <p>-.-. .. .- ---!</p>
+    <p>\(\left[ \underbrace{ \frac{\hat{p}^2}{2m}+V( \hat{r} )}_{E_n^{(0)}=\frac{-13,6 eV}{n^2}} \underbrace{-\frac{\hat{p}^4}{8 m^3c^2}}_{\text{mass-velocity correction}}+\frac{1}{2 m^2 c^2}\frac{dV}{dr}\frac{\hat{\vec{S}} \cdot \hat{\vec{L}}}{r} +\underbrace{\frac{\pi \hbar^2}{2 m^2c^2} \frac{Ze^2}{4 \pi \varepsilon_0}\delta (\hat{r})}_{\text{termine di Darwin}} \right]\ket{\Psi}=E \ket{\Psi}\)</p>
+    <p>la mass velocity correction deriva da \(E= \sqrt{p^2c^2+m^2c^4}=\sqrt{m^2c^4\left(1+\frac{p^2c^2}{m^2c^4}\right)}\)</p>
+    <p>faccio l'espansione di taylor di \(\sqrt{1+x} \sim 1+x/2-x^2/8\) quindi.... \(\sim mc^2 \left[1+\frac{p^2c^2}{2m^2c^4}-\frac{1}{8}\left(\frac{p^2c^2}{m^2c^4}\right)^2\right]=mc^2+\frac{p^2}{2m}-\frac{p^4}{8m^3c^2}\)</p>
+<p>il termine di Darwin: \(\nabla^2 V_c (r) \sim \nabla^2 \frac{1}{r} \sim \delta (\vec{r})\)</p>
+    <p>\(\nabla \cdot E =\rho\rightarrow -\nabla^2 V=\frac{\rho}{varepsilon_0}= \frac{q}{\varepsilon_0} \delta \vec{r}\)</p>
+<p>\(H=H^{(0)}+\hat{H'}\)</p>
+    <p>\(E_n^{(0)}=E_n^{(0)}+\bra{n^{(0)}}H'\ket{n^{(0)}}\)</p>
+    <p>\(le nostre \(\Psi^{(0)}\) imperturbate sono \(\Psi:{n,l,j,m_j}\)\)</p>
+<p>\(\hat{H}_{rel}=-\frac{\hat{p}}{8m^3c^2}\)</p>
+    <p>\(\Delta E_{rel}=\bra{nljm_j}H_{rel}\ket{nljm_j}=-\frac{1}{2mc^2}\bra{nljm_j}\underbrace{\left(\frac{\hat{p}^2}{2m}\right)^2}_{\left(\hat{H_0}+\frac{Ze^2}{4\pi \varespilon_0 r}\right)^2} \ket{nljm_j}=-\frac{1}{2mc^2}\left[{E_n^{(0)}}^2+2E_n^{(0)}\frac{Ze^2}{4 \pi \varepsilon_0}\langle \frac{1}{r}\rangle_{n,l}+\left(\frac{Ze^2}{4 \pi \varepsilon_0}^2\right)\langle \frac{1}{r^2}\rangle_{n,l}\right]\)</p>
+    <p> in \(\Psi_{n,l,m_l}=R_{n,l} Y_l^{m_l}\) si ha \(\langle\frac{1}{r}\rangle=\frac{Z}{a_0 n^2}\) e \(\langle\frac{1}{r^2}\rangle=\frac{Z}{a_0^2n^3 (l+1/2)}\)</p>
+    <p>....\( -E_n^{(0)}\frac{(Z \alpha)^2}{n^2}\left[\frac{3}{4}-\frac{n}{l+1/2}\right]\)</p>
+<p>\(\Delta E_{so}=\bra{ n,l,k,m_j} \frac{\psi (r)}{2} (\hat{J}^2 -\hat{S}^2-\hat{L}^2)\ket{n,l,j,m_j}=\frac{\hbar^2}{2}\bra{n,l,j,m_j}\psi (r) \ket{n,l,j,m_j}[j(j+1)-l(l+1)-s(s+1)]=\frac{\hbar^2}{4m^2c^2}\frac{Ze^2}{4 \pi \varepsilon_0} \langle \frac{1}{r^3}\rangle [j(j+1)-l(l+1)-s(s+1)] \)</p>
+    <p>\(\langle \frac{1}{r^3}\rangle=\frac{Z^3}{a_0^3 n^3l(l+1/2)(l+1)}\)</p>
+    <p>....\(=-\frac{E_n^{(0)}}{2n} (Z \alpha )^2 \frac{[j(j+1)-l(l+1)-3/4]}{l(l+1/2)(l+1)}\)</p>
+    <p>\(\Delta E_{Darwin}=\bra{n,l,j,m_j}\frac{\pi \hbar^2}{2m^2 c^2}\frac{Ze^2}{4 \pi \varepsilon_0}\delta (\vec{r}) \ket{4 \pi \varepsilon_0}=\frac{\pi \hbar^2}{2m^2c^2}\frac{Ze^2}{4 \pi \varepsilon_0}\left|R_{n_l} (r=0) \right|^2=-E_n^{(0)} \frac{(Z \alpha)^2}{n^2}\)</p>
+    <p>\(V_{eff}=\frac{1}{r}+\frac{l(l+1)}{r^2}\)</p>
+    <p>abbiamo calcolato la vera struttutura fine finale con effetti relativistici</p>
+    <p>\(\Delta E= \Delta E_{rel}+ \Delta E_{so}+ \Delta E_{Darwin}=E_n^{(0)} \frac{(Z \alpha)^2}{n^2}\left[\frac{n}{j+\frac{1}{2}}-\frac{3}{4}\right]\)</p>
+    <p>per n=2
+    </p>
    </body>
 </html>
