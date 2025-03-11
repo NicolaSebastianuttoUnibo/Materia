@@ -221,6 +221,48 @@
     <p>\(\bra{\vec{x_1},\vec{x_2}}\hat{P_{12}}}\ket{\ket{\Psi_1,\Psi_2}}_{\pm}=\braket{\vec{x_2},\vec{x_1}}{\ket{\Psi_1,\Psi_2}}_{\pm}=...=\boxed{\pm \braket{\vec{x_1},\vec{x_2}}{\ket{\Psi_1,\Psi_2}}_{\pm}}\)</p>
   <p>\(\Psi (\vec{x_1},\vec{x_2})=\pm Psi (\vec{x_2},\vec{x_1})\)</p>
     <p>La parte orbitale, se la mia hamiltoniana ha come simmetria quella dello scambio delle particelle, può essere PARA (+) o ORTO (-)</p>
+    <p>_________________</p>
+<p>\( \ket{\Psi_1,\Psi_2}_{\pm}=\frac{\ket{\Psi_1,\Psi_2}_2\pm\ket{\Psi_1,\Psi_2}_1}{\sqrt{2}} \)</p>
+    <p>\( \Psi{\uparrow }= \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \chi_{s=1/2,m_s=+1/2}=\ket{1/2,+1/2} \)</p>
+        <p>\( \Psi{\downarrow }= \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \chi_{s=1/2,m_s=-1/2}=\ket{1/2,-1/2}  \)</p>
+    <p>\(\hat{vec{S}}=hat{vec{S_1}}+hat{vec{S_2}}\)</p>
+    <div>
+    <p>\(\ket{S=1,S_z=1}=\ket{\uparrow}_1\ket{\uparrow}_2\): tripletto</p>
+    <p>\(\ket{S=1,S_z=0}=\frac{\ket{\uparrow}_1\ket{\downarrow}_2+\ket{\downarrow}_1\ket{\uparrow}_2}{\sqrt{2}}\): tripletto</p>
+    <p>\(\ket{S=1,S_z=-1}=\ket{\downarrow}_1\ket{\downarrow}_2\): tripletto</p>
+    <p>\(\ket{S=0,S_z=0}=\frac{\ket{\uparrow}_1\ket{\downarrow}_2-\ket{\downarrow}_1\ket{\uparrow}_2}{\sqrt{2}}\): singoletto</p>
+</div>
 
+    <p>\(\ket{\Psi^{TOT}}_{+}=\ket{\Psi}_{+}\chi_{S=0,S_z=0}\)</p>
+        <p>\(\ket{\Psi^{TOT}}_{-}=\ket{\Psi}_{-}\chi_{S=1,S_z=\begin{cases}+1\\0\\-1\end{cases}}\)</p>
+    <p>\(\underbrace{\left[\frac{\hat{p}}{2m}-\frac{Z^2}{4 \pi \varepsilon_0 r_1}\right]}_{ \ket{\Psi_1}=\ket{n_1,l_1,n_{l_1}}}  +  \underbrace{ \left[\frac{\hat{p}}{2m}-\frac{Z^2}{4 \pi \varepsilon_0 r_2}\right]}_{\ket{\Psi_2}=\ket{n_2,l_2,n_{l_2}}} \ket{\Psi}=E\ket{\Psi}  \)</p>
+
+    <p>\(E^0=E_1+E_2=-\frac{m}{2}\left(\frac{Ze^2}{4 \pi \varepsilon_0 \hbar}\right)^2 \left(\frac{1}{n_1^2}+\frac{1}{n_2^2}\right)\)</p>
+    <p>\(ket{1,0,0)\) e \(   \ket{1,0,0} \)</p>
+<p>\(\ket{\Psi}= \ket{1,0,0}  \ket{1,0,0} \)</p>
+<p>\( \Psi^0 (\vec{x_1},\vec{x_2} )=\bra{\vec{x_1},\vec{x_2}} \ket{\Psi}=\Psi_{1,0,0}(\vec{x_1} ) \Psi_{1,0,0}(\vec{x_2} )=\frac{1}{\pi}\left(\frac{Z}{a_0}\right)^3 e^{-\frac{Z}{a_0}(|\vec{x_1}|+|\vec{x_2}|)}\)</p>
+    <p>\(E_0=-8 Ry=-4 a.u.\) (atom units) \( =-108,8 eV\)</p>
+    
+    <p>\(\Delta E =\frac{e^2}{4 \pi \varepsilon_0}  \bra{1,0,0;1,0,0}\frac{1}{|\vec{x_1}-\vec{x_2}|}\ket{1,0,0;1,0,0}=\frac{1}{4 \pi \varepsilon_0}\int d^3 x_1 \int d^3 x_2 \frac{[-e| \Psi_{1,0,0} (\vec{x_1})|^2][ -e| \Psi_{1,0,0} (\vec{x_2})|^2]}{|\vec{x_1}-\vec{x_2}|}  = \frac{1}{4 \pi \varepsilon_0}\int d^3 x_1 d^3 x_2 \frac{\rho (\vec{x_1} )  \rho (\vec{x_2} )}{|\vec{x_1}-\vec{x_2}|}\) questa non è altro che l'interazione elettrostatica tra due nuvole di carica, formalmente il <strong>termine di Hartree</strong></p>
+    <p>\(\int d^3 x_2 \frac{\rho (\vec{x_1} )  \rho (\vec{x_2} )}{|\vec{x_1}-\vec{x_2}|} =\frac{e^2}{\pi^2} \left(\frac{Z}{a_0}\right)^6 e^{-\frac{2Z}{a_0}r_1} \)</p>
+    <p>\(\int_0^{\infty} \int_0^{\pi} \int_0^{2\pi} r_2^2 \sin \theta d\theta d \Phi \frac{e^{-\frac{2Z}{a_0}r_2}}{\sqrt{r_1^2+r_2^2-2r_1r_2 \cos \theta}}=frac{e^2}{\pi^2} \left(\frac{Z}{a_0}\right)^6 2\pi \int_0^{\infty} r_2^2 ^{-\frac{2Z}{a_0}r_1} dr_2 \int_0^{\pi} d\theta \frac{\sin \theta}{r_1^2+r_2^2-2r_1r_2 \cos \theta}\)</p>
+    <p>\(\frac{\sqrt{r_1^2+r_2^2-2r_1r_2 \cos \theta}}{r_1 r_2} \big|_0^\pi =\frac{|r_1+r_2|-|r_1-r_2|}{r_1r_2}=\begin{cases}\frac{2}{r_1}&r_2\lt r_1\\\frac{2}{r_2}&r_2\gt r_1\end{cases}\)</p>
+<p>\(I_2 (r_1)=2\pi\left[\int_0^{r_1}dr_2 r_2^2e^{-\frac{2Z}{a_0}r_2}\frac{2}{r_1}  + \int_{r_1}^{\infty}dr_2 r_2^2e^{-\frac{2Z}{a_0}r_2}\frac{2}{r_2}  \right]=\frac{\pi a_0^3}{r_1 Z^3}\left[1-e^{-\frac{2Z}{a_0}r_1}\left(1+\frac{Zr_1}{a_0}\right)\right]\)</p>
+    <p>\(\Deta E=\frac{e^2 Z^3}{\pi \varepsilon_0 a_0^3} \int_0^{\infty} dr_1 r_1 e^-{\frac{2Z}{a_0}r_1}\left[1-e^{\frac{2Z}{a_0}r_1}\left(1+\frac{Zr_1}{a_0}\right)\right]\)</p>
+    <p>\(\Delta E=\frac{5e^2Z}{32 \pi \varepsilon_0 a_0}=\frac{m}{2}\frac{5}{4}\left(\frac{Ze^2}{4 \pi \varepsilon_0}\right \hbar)^2=-\frac{5}{4}Z E_{Bohr}=\frac{5}{8}Z a.u.\) (questa è una correzione columbiana repulsivo quindi è positivo). Per l'atomo di elio si ha \(\Delta E=34 eV\)</p>
+<p>\(E^{\text{1° ordine}}=-108,8 eV+34eV=-74,8 eV\)</p> 
+<p>\(\Psi(\vec{x_1},\vec{x_2} )=\frac{1}{\sqrt{\pi}} \left(\frac{Z_{eff}}{a_0}\right)^{3/2} e^{-\frac{Z_{eff}|\vec{x_1}|}{a_0}}   \frac{1}{\sqrt{\pi}} \left(\frac{Z_{eff}}{a_0}\right)^{3/2} e^{-\frac{Z_{eff}|\vec{x_2}|}{a_0}}\)</p>
+    <p>\(Z_{eff}=Z-S\) dove \(S\) è lo schermaggio</p>
+    <p>Abbiamo sovrastiamto il termine coulombiano</p>
+    <p>\(\Phi_{Z_{eff}}=\frac{1}{\pi}{Z_{eff}}^{3}e^{-Z_{eff}(|\vec{x_1}|+|\vec{x_2}|)}\)</p>
+    <p>abbiamo una energia che dipende da una funzione \(E[\Phi_{Z_{eff}] \ge E_0\) </p>
+    <p>Più bravo sono a parametrizzare, tanto più mi avvicino a \(E_0\), mi avvicino al limite inferiore</p>
+    <p>\(E[\Phi]=\bra{\Phi}\hat{H}\ket{\Phi}\)</p>  
+    <p>\(\hat{H}\ket{\Psi_{m}}=E_m\ket{\Psi_m}\)</p>
+<p>\(\ket{\Phi}=\sum_n c_n \ket{\Psi_n}\) con \(c_n=\bra{\Psi_n}\ket{\Phi}\)</p>
+    <p>\(\bra{\Phi}\hat{H}\ket{\Psi}=\sum_n \sum_m =c_n^*\bra{\Phi_n}\hat{H}\ket{\Psi_m}c_m=\sum_n \sum_m c_n^* c_m E_m \delta_{n,m} =\sum_n |c_n|^2 E_n \geE_0 \sum_n |c_n|^2=E_0 \)</p>
+    <p>\(E[\Phi]=\bra{\Psi_{Z_{eff}}}-\frac{1}{2}\nabla_{r_1}^2 -\frac{1}{2}\nabla_{r_2}^2 -\frac{Z}{r_1}-\frac{Z}{r_2}+\frac{1}{\left|r_1-r_2 \right|} \ket{\Psi_{Z_{eff}}} \)</p>
+    <p>\(E[\Psi_{Z_{eff}}]=-Z^2 u.a.+\frac{5}{8} Z u.a.\)</p>
+    <p>\(\frac{\delta}{\delta Z_{eff}} E[\phi_{Z_{eff}}}]=0\)</p>
 </body>
 </html>
