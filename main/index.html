@@ -144,7 +144,7 @@
     <p>\(P_{1,0} (r)=r^2 |R_{1,0}(r)|^2=4 r^2 \left( \frac{Z}{a_0} \right)^{3}e^{-2Z r/a_0}\)</p>
     <p>\(\frac{dP_{1,0}(r_{max})}{dr}=4 \left( \frac{Z}{a_0} \right)^{3} \left[ 2 r_{max}-\frac{2Z}{a_0} r^2_{max} \right]e^{\frac{-2Z r_max}{a_0}}=0\)</p>
     <p>\(r_max=a_o/Z \sim 0,53\overset{o}{\text{A}}\) /Z\)</p>
-    <p>\(\langle r \ranfle_{1,0}=\int_0^{\infty} r P_{1,0}(r)dr=...=\frac{3a_0}{2 Z}\)</p> 
+    <p>\(\langle r \rangle_{1,0}=\int_0^{\infty} r P_{1,0}(r)dr=...=\frac{3a_0}{2 Z}\)</p> 
 <h4>interazione spinorbita</h4>
 <p>abbiamo un nucleo con una carica ed un elettrone che ci gira intorno con una certa orbita di raggio r (in senso antiorario)</p>
     <p>sediamoci nell'elettrone: il protone gira attorno a me: se l'elettrone è fermo non ha momento angolare orbnitale perchè è fermo, quindi l'unico momento che l'eltrrone sente è quello dello spin. Usiamo la legge di Ampere: \(\vec{B}=-\frac{\mu_0}{4\pi} \frac{\vec{j} \times \vec{r}}{r^3}=\frac{Ze}{4 \pi}\frac{\mu_0 \vec}{v} \times \vec{r}}{r^3}\)</p>
@@ -184,7 +184,34 @@
     <p>\(V_{eff}=\frac{1}{r}+\frac{l(l+1)}{r^2}\)</p>
     <p>abbiamo calcolato la vera struttutura fine finale con effetti relativistici</p>
     <p>\(\Delta E= \Delta E_{rel}+ \Delta E_{so}+ \Delta E_{Darwin}=E_n^{(0)} \frac{(Z \alpha)^2}{n^2}\left[\frac{n}{j+\frac{1}{2}}-\frac{3}{4}\right]\)</p>
-   <p>___________________________</p>
+ <p>\(\hat{H_{so}}=\frac{\hat{\vec{S}}\cdot\hat{\vec{L}}}{\hat{r}}\) con \(n=2 l=1 s=1/2\)</p>
+    <p>\(\vec{S}}\cdot\hat{\vec{L}} \sim \hbar \sqrt{s(s+1)} \hbar \sqrt{l (l+1)} \mathbb{1} \sim \hbar \mathbb{1} \)</p>
+    <p>\(V=\frac{Ze^2}{4 \pi \varepsilon_0 r} \rightarrow\frac{dV}{dr}=\frac{Z e^2}{\hat{\vec{S}} r^2}\)<p/>
+        <p>\(\mu_B=\frac{e\hbar}{2m}\)</p>
+    <p>\(\langle r^{-3}\rangle_{2,1}=\int_0^{+\infty} r\frac{1}{r^3}P_{2,1} (r)=\int_0^{+\infty}dr \sim \frac{1}{(3a_0)^3} \)</p>
+    <p>\(  \Delta E_{so}=\bra{n=2,l=1}\hat{H}\ket{n=2,l=1}=\frac{g_s \mu_B}{2emc^2\hbar} \bra{2,1}\frac{dV}{dr}\frac{\hat{\vec{S}}\cdot\hat{\vec{L}}}{\hat{r}}\ket{2,1} = \frac{e^2 \hbar^2}{8m^2c^2 \pi \varepsilon_0}\bra{2,1}\frac{1}{r^3}\ket{2,1}\)</p>
+    <p>la spinorbita è utile/è un effetto che si verifica nella struttura fine</p>
+    <p>\(\hat{\vec{J}}=\hat{\vec{L}}+\hat{\vec{S}}\)  \([\hat{\vec{L}},\hat{\vec{S}}]=0\)</p>
+    <p>\(\hat{\vec{J}}^2=\hat{\vec{L}}^2+\hat{\vec{S}}^2+2\hat{\vec{L}}\cdot\hat{\vec{S}}\)</p>
+    <p>operatore di spinorbita: \(\hat{\vec{L}}\cdot\hat{\vec{S}}=\frac{1}{2}(\hat{\vec{J}}^2-\hat{\vec{L}}^2-\hat{\vec{S}}^2)\)</p>
+    <p>\(\hat{H_{so}}=\frac{g_s \mu_B}{2em_e^2\hbar}\frac{dV(r)}{dr}\frac{1}{2r}(\hat{\vec{J}}^2-\hat{\vec{L}}^2-\hat{\vec{S}}^2)\)</p>
+    <p>\(\ket{l,m_l,m_s}\rightarrow \ket{l,s,j,m_j}\)</p>
+        <p>\(\hat{\vec{J}}^2\ket{l,s,j,m_j}\rightarrow \hbar \sqrt{l(l+1)}\ket{l,s,j,m_j}\)</p>
+            <p>\(\hat{\vec{J}}_z \ket{l,s,j,m_j}\rightarrow \hbar m_j \sqrt{l(l+1)}\ket{l,s,j,m_j}\)</p>
+    <p>in generale \(m_j=m_l+m_s\) per un elettrone invece \(m_j=m_l+1/2\) dato che \(|l-s| \le j \le |l+s|\)</p>
+    <p>\(\ket{l,s,j,m_j}=\sum_{m_l,m_s} \ket{l,s,m_l,m_s} \underbrace{\bra{l,s,m_l,m_s}\ket{l,s,j,m_j}}_{\text{coeff. di Clebsh-Gordan}}\)</p>
+    <p>\(\bra{\theta , \phi}\ket{l,s,j,m_j}=\mathscr{Y}_j^{m_j} (\theta , \phi)=\sum_{m_l=-l}^{+l} \sum_{m_s=-s}^{+s} Y_l^{m_l} (\theta , \phi) \chi_{s,m_s} \mathscr{C}\)</p>
+    <p>\(\alpha \begin{pmatrix}1\\0\end{pmatrix}+\beta\begin{pmatrix}0\\1\end{pmatrix}\)</p>
+    <p> \(\chi_{s=1/2, ms=+1/2}=\begin{pmatrix}1\\0\end{pmatrix}=\ket{s=1/2,m_s=1/2}\)</p>
+        <p> \(\chi_{s=1/2, ms=-1/2}=\begin{pmatrix}0\\1\end{pmatrix}=\ket{s=1/2,m_s=-1/2}\)</p>
+    <p>\(S_2=\frac{\hbar}{2}\begin{pmatrix}1 & 0\\0&-1\end{pmatrix}\)</p>
+    <img src="materiaimg7.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
+
+
+
+
+    
+    <p>___________________________</p>
     <p>Le linee spettrali non sono delta di Dirac ma hanno un certo spessore </p>
     <p>Principio di indeterminazione Heisenberg</p>
     <p>\(\Delta E \Delta t \sim \hbar \rightarrow \Delta \mu = \frac{\Delta}{h} \sim \frac{1}{2\pi \Delta t}\) </p>
