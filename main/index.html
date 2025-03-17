@@ -138,7 +138,7 @@
     <h2>Esercizi</h2>
     <p>\(E_n=\frac{13.6 eV}{n^2}\)</p>
     <p>\(E_1=13.6 eV\),\(E_2=3,39 eV\)</p>
-    <p>\(\frac{n_2 (T)}{n_1 (T)}=\frac{e^{-\fracE_2}{kT}}{e^{-\frac{E_1}{kT}}}=e^{-1,18*10^{-5} K/T} \rightarrow T\sim 10^5 K\)</p>
+    <p>\(\frac{n_2 (T)}{n_1 (T)}=\frac{e^{-\frac{E_2}{kT}}{e^{-\frac{E_1}{kT}}}=e^{-1,18*10^{-5} K/T} \rightarrow T\sim 10^5 K\)</p>
     <p>....</p>
     <p> n=1 l=0  \(R_{1,0}(r)=\mathscr{L} \left( \frac{Z}{a_0} \right)^{3/2}e^{-Z r/a_0}\)</p>
     <p>\(P_{1,0} (r)=r^2 |R_{1,0}(r)|^2=4 r^2 \left( \frac{Z}{a_0} \right)^{3}e^{-2Z r/a_0}\)</p>
@@ -147,7 +147,7 @@
     <p>\(\langle r \rangle_{1,0}=\int_0^{\infty} r P_{1,0}(r)dr=...=\frac{3a_0}{2 Z}\)</p> 
 <h4>interazione spinorbita</h4>
 <p>abbiamo un nucleo con una carica ed un elettrone che ci gira intorno con una certa orbita di raggio r (in senso antiorario)</p>
-    <p>sediamoci nell'elettrone: il protone gira attorno a me: se l'elettrone è fermo non ha momento angolare orbnitale perchè è fermo, quindi l'unico momento che l'eltrrone sente è quello dello spin. Usiamo la legge di Ampere: \(\vec{B}=-\frac{\mu_0}{4\pi} \frac{\vec{j} \times \frac{vec{r}}{r^3}=\frac{Ze}{4 \pi}\frac{\mu_0 \vec}{v} \times \frac{\vec{r}}{r^3}\)</p>
+    <p>sediamoci nell'elettrone: il protone gira attorno a me: se l'elettrone è fermo non ha momento angolare orbnitale perchè è fermo, quindi l'unico momento che l'eltrrone sente è quello dello spin. Usiamo la legge di Ampere: \(\vec{B}=-\frac{\mu_0}{4\pi} \frac{\vec{j} \times \vec{r}}{r^3}=\frac{Ze}{4 \pi}\frac{\mu_0 \vec}{v} \times \frac{\vec{r}}{r^3}\)</p>
     <p>\(\vec{L}=m \vec{r} \times \vec{v}\)</p>
     <p>quindi \(\vec{B}=\frac{Z e^2}{4\pi m \varepsilon c^2} \frac{\vec{L}}{r^2r}=\frac{E\vec{L}}{mec^2r}=\frac{\vec{L}}{mec^2r}\frac{dV(r)}{dr}\)</p>
    <p>\(\Delta E=-\vec{\mu_s} \cdot \vec{B}\)</p> 
@@ -251,7 +251,7 @@
     <p>_________________</p>
 <p>\( \ket{\Psi_1,\Psi_2}_{\pm}=\frac{\ket{\Psi_1,\Psi_2}_2\pm\ket{\Psi_1,\Psi_2}_1}{\sqrt{2}} \)</p>
     <p>\( \Psi{\uparrow }= \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \chi_{s=1/2,m_s=+1/2}=\ket{1/2,+1/2} \)</p>
-        <p>\( \Psi{\downarrow }= \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \chi_{s=1/2,m_s=-1/2}=\ket{1/2,-1/2}  \)</p>
+        <p>\( \Psi{\downarrow }= \begin{pmatrix} 0 \\ 1 \end{pmatrix} = \chi_{s=1/2,m_s=-1/2}=\ket{1/2,-1/2}  \)</p>
     <p>\(\hat{\vec{S}}=\hat{\vec{S_1}}+\hat{\vec{S_2}}\)</p>
     <div>
     <p>\(\ket{S=1,S_z=1}=\ket{\uparrow}_1\ket{\uparrow}_2\): tripletto</p>
@@ -272,7 +272,7 @@
     
     <p>\(\Delta E =\frac{e^2}{4 \pi \varepsilon_0}  \bra{1,0,0;1,0,0}\frac{1}{|\vec{x_1}-\vec{x_2}|}\ket{1,0,0;1,0,0}=\frac{1}{4 \pi \varepsilon_0}\int d^3 x_1 \int d^3 x_2 \frac{[-e| \Psi_{1,0,0} (\vec{x_1})|^2][ -e| \Psi_{1,0,0} (\vec{x_2})|^2]}{|\vec{x_1}-\vec{x_2}|}  = \frac{1}{4 \pi \varepsilon_0}\int d^3 x_1 d^3 x_2 \frac{\rho (\vec{x_1} )  \rho (\vec{x_2} )}{|\vec{x_1}-\vec{x_2}|}\) questa non è altro che l'interazione elettrostatica tra due nuvole di carica, formalmente il <strong>termine di Hartree</strong></p>
     <p>\(\int d^3 x_2 \frac{\rho (\vec{x_1} )  \rho (\vec{x_2} )}{|\vec{x_1}-\vec{x_2}|} =\frac{e^2}{\pi^2} \left(\frac{Z}{a_0}\right)^6 e^{-\frac{2Z}{a_0}r_1} \)</p>
-    <p>\(\int_0^{\infty} \int_0^{\pi} \int_0^{2\pi} r_2^2 \sin \theta d\theta d \Phi \frac{e^{-\frac{2Z}{a_0}r_2}}{\sqrt{r_1^2+r_2^2-2r_1r_2 \cos \theta}}=frac{e^2}{\pi^2} \left(\frac{Z}{a_0}\right)^6 2\pi \int_0^{\infty} r_2^2 e^{-\frac{2Z}{a_0}r_1} dr_2 \int_0^{\pi} d\theta \frac{\sin \theta}{r_1^2+r_2^2-2r_1r_2 \cos \theta}\)</p>
+    <p>\(\int_0^{\infty} \int_0^{\pi} \int_0^{2\pi} r_2^2 \sin \theta d\theta d \Phi \frac{e^{-\frac{2Z}{a_0}r_2}}{\sqrt{r_1^2+r_2^2-2r_1r_2 \cos \theta}}=\frac{e^2}{\pi^2} \left(\frac{Z}{a_0}\right)^6 2\pi \int_0^{\infty} r_2^2 e^{-\frac{2Z}{a_0}r_1} dr_2 \int_0^{\pi} d\theta \frac{\sin \theta}{r_1^2+r_2^2-2r_1r_2 \cos \theta}\)</p>
     <p>\(\frac{\sqrt{r_1^2+r_2^2-2r_1r_2 \cos \theta}}{r_1 r_2} \big|_0^\pi =\frac{|r_1+r_2|-|r_1-r_2|}{r_1r_2}=\begin{cases}\frac{2}{r_1}&r_2\lt r_1\\\frac{2}{r_2}&r_2\gt r_1\end{cases}\)</p>
 <p>\(I_2 (r_1)=2\pi\left[\int_0^{r_1}dr_2 r_2^2e^{-\frac{2Z}{a_0}r_2}\frac{2}{r_1}  + \int_{r_1}^{\infty}dr_2 r_2^2e^{-\frac{2Z}{a_0}r_2}\frac{2}{r_2}  \right]=\frac{\pi a_0^3}{r_1 Z^3}\left[1-e^{-\frac{2Z}{a_0}r_1}\left(1+\frac{Zr_1}{a_0}\right)\right]\)</p>
     <p>\(\Delta E=\frac{e^2 Z^3}{\pi \varepsilon_0 a_0^3} \int_0^{\infty} dr_1 r_1 e^-{\frac{2Z}{a_0}r_1}\left[1-e^{\frac{2Z}{a_0}r_1}\left(1+\frac{Zr_1}{a_0}\right)\right]\)</p>
@@ -290,6 +290,73 @@
     <p>\(\bra{\Phi}\hat{H}\ket{\Psi}=\sum_n \sum_m =c_n^*\bra{\Phi_n}\hat{H}\ket{\Psi_m}c_m=\sum_n \sum_m c_n^* c_m E_m \delta_{n,m} =\sum_n |c_n|^2 E_n \ge E_0 \sum_n |c_n|^2=E_0 \)</p>
     <p>\(E[\Phi]=\bra{\Psi_{Z_{eff}}}-\frac{1}{2}\nabla_{r_1}^2 -\frac{1}{2}\nabla_{r_2}^2 -\frac{Z}{r_1}-\frac{Z}{r_2}+\frac{1}{\left|r_1-r_2 \right|} \ket{\Psi_{Z_{eff}}} \)</p>
     <p>\(E[\Psi_{Z_{eff}}]=-Z^2 u.a.+\frac{5}{8} Z u.a.\)</p>
-    <p>\(\frac{\delta}{\delta Z_{eff}} E[\phi_{Z_{eff}}]=0\)</p>
+    <p>\(\frac{\delta}{\delta Z_{eff}} E[\phi_{Z_{eff}}]=0\)</p
+    <p>______________________</p>
+    <p>\(\Phi_{Z_{eff}} (r_1,r_2)=\frac{Z^3e}{\pi}e^{-Ze(r_1+r_2)}\)</p>
+    <p>\(Z_{eff}=Z-S \lt Z\)</p>
+    <p>\(E \left[\Phi_{Z_{eff}}\right]=\bra{\Phi_{Z_{eff}}}-\frac{1}{2}\nabla_{r_1}^2+-\frac{1}{2}\nabla_{r_2}^2-\frac{Z}{r_1}-\frac{Z}{r_2}+\frac{1}{|r_1+r_2|}\ket{\Phi_{Z_{eff}}}\)</p>
+    <p>\(\bra{\Phi_{Z_{eff}}}-\frac{Z}{r_1}\ket{\Phi_{Z_{eff}}}=-Z\bra{\Phi_{Z_{eff}}}\frac{1}{r_1}\ket{\Phi_{Z_{eff}}}=-ZZ{eff}\)</p>
+    <p>\(\langle \frac{1}{r}\rangle=\frac{Z_{eff}}{a_on^2}\)</p>
+    <p>\(\bra{\frac{1}{\sqrt{\pi}Z_e^{3/2}}e^{-Z_{eff}r}}\frac{1}{r}\ket{\frac{1}{\sqrt{\pi}Z_e^{3/2}}}e^{-Z_{eff}r}\)</p>
+    <p>\(\bra{\Phi_{Z_{eff}}}-\frac{1}{2}\nabla_{r_1}^2 \ket{\Phi_{Z_{eff}}}\) per il teorema del Viriale fa: \(=\frac{1}{2}\langle V \rangle=\frac{1}{2}\bra{\Phi_{Z_{eff}}}-\frac{Ze}{r}\ket{\Phi_{Z_{eff}}}=+\frac{Ze^2}{2}\)</p>
+    <p>\(\left[ -\frac{1}{2}\nabla^2-\frac{Ze}{r}\right]\ket{\Phi_{Z_{eff}}}=E\ket{\Phi_{Z_{eff}}}\)</p>
+    <p>Mi manca solo il termine di interazione \(\frac{1}{|r_1+r_2|\)</p>
+    <p>\(\bra{\Phi_{Z_{eff}}}\frac{1}{|r_1+r_2|}\ket{\Phi_{Z_{eff}}}=\frac{5}{8}Z_{eff}\)</p>
+    <p>si ha quindi che \(E \left[\Phi_{Z_{eff}}\right]=Ze^2-2ZZ_{eff}+\frac{5}{8}Z_{eff}\sim 77,45 eV\)</p>
+    <p>\(\frac{d E}{d Z_{eff}}=2 Z_{eff}-2Z+\frac{5}{8}=0\)</p>
+    <p>\(Z_{eff}=Z-\overbrace{\frac{5}{16}}^{S}\)</p>
+    <p>Abbiamo definito il concetto di schermaggio</p>
+    <p>Finora ad ora abbiamo considerato lo stato fondamentale dell'idrogenoide</p>
+    <p>Ora guardiamo gli altri stati</p>
+    <p>\(n ^{2s+1}L_J\) n identifica il livello energetico più alto</p>
+    <p>Esempi: (abbiamo due eletroni)</p>
+    <p>\(\Psi_{\pm}=\frac{\ket{n_1,l_1,m_{l_1}}_1\ket{n_2,l_2,m_{l_2}}_2\pm\ket{n_2,l_2,m_{l_2}}_1\ket{n_1,l_1,m_{l_1}}_2}{\sqrt{2}}\)</p>
+    <p>\(\bullet \begin{matrix} n_1=1 & l_1=0\end{matrix}\)</p>
+    <p>\(\bullet \begin{matrix} n_2=1 & l_1=0\end{matrix}\)</p>
+    <p>L=0, S=0, simmetrica</p>
+    <p>quindi si ha \(1 ^1S_0\)</p>
+    <p>altro esempio</p>
+    <p>\(\bullet \begin{matrix} n_1=1 & l_1=0\end{matrix}\)</p>
+    <p>\(\bullet \begin{matrix} n_2=2 & l_1=0\end{matrix}\)</p>
+    <p>L=0, S=0, simmetrica</p>
+    <p>quindi si ha \(2 ^1S_0\) oppure \(2 ^3S_1\)</p>
+     <p>altro esempio</p>
+    <p>\(\bullet \begin{matrix} n_1=1 & l_1=0\end{matrix}\)</p>
+    <p>\(\bullet \begin{matrix} n_2=2 & l_1=1\end{matrix}\)</p>
+    <p>L=0, S=0, simmetrica</p>
+    <p>quindi si ha \(2 ^1P_{J=1\) oppure \(2 ^3P_{J=0,1,2}\)</p>
+    <img src="materiaimg8.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
+    <p>nelle transizione ottiche si ha \(\Delta L=\pm 1\) e \(\Delta S=0\)</p>
+    <p>nel caso unidimensionale: una funzione simmetrica spazialmente significa che due elttroni possono stare molto vicini tra loro. Mentre una funzione antisimettrica che fa zero quando i due elettroni sono vicini, quindi nell'origine c'èn un nodo/un punto di flesso. </p>
+    <p>\(\rightarrow ^3L \text{ significa distanti mentre } ^1L \text{ significa vicini}\) </p>
+ <p>\(\Delta E_{\pm}=\ket{\Psi_{\pm}} ^{\overbrace{\downarrow }^{\ket{x_1,x_2}\bra{x_1,x_2}}}\frac{1}{|\vec{x_1}-\vec{x_2}|}\ket{\Psi_{\pm}}=\frac{1}{2}\int \int d^3x_1\d^3x_2\left[\Psi_a^* (\vec{x_1}) \Psi_b^* (\vec{x_2})\pm \Psi_a^* (\vec{x_2})\Psi_b^* (\vec{x_1})\right]\frac{1}{|\vec{x_1}-\vec{x_2}|}\left[\Psi_a^* (\vec{x_1}) \Psi_b^* (\vec{x_2})\pm \Psi_a^* (\vec{x_2})\Psi_b^* (\vec{x_1})\right]=J_{ab}\pm K_{ab}\)</p>
+    <p>La funzione d'onda con il + è quella del singoletto, quella del - è quella del tripletto</p>
+    <p>\(J_{ab}=\int \int d^3x_1\d^3x_2 \frac{\left|\Psi_a (\vec{x_1})\right|^2\left|\Psi_b (\vec{x_2})\right|^2}{\left|\vec{x_1}-\vec{x_2}\right|} \)</p>
+    <p>\(K_{ab}=\int \int d^3x_1\d^3x_2 \frac{\Psi_a^* (\vec{x_1} ) \Psi_a^* (\vec{x_2} ) \Psi_b^* (\vec{x_1} ) \Psi_b^* (\vec{x_2} )}{\left|\vec{x_1}-\vec{x_2}\right|} \) "integrale di scambio" o "integrale di Fock": non ha nessun equivalente classico essendo che deriva dalla indistinguibilità delle particelle</p>
+    <p>\(\Delta E_{pm}= \begin{cases}J_{ab}+K_{ab} & ^1L \\ J_{ab}-K_{ab} & ^3L \end{cases} \)</p>
+    <p>la correzione per lo stato del tripletto è più bassa rispetto al caso del singoletto</p>
+ <p class="hover-effect"   onmouseover="this.textContent='ciao!!!'"  onmouseout="this.textContent='-.-. .. .- ---!'">-.-. .. .- ---!</p> 
+  <p>\(2\vec{S_1}\cdot \vec{S_2}=S^2-S_1^2-S_2^2=S^2-\frac{3}{2}\rightarrow \vec{S_1}\cdot \vec{S_2}=\frac{1}{2}S^2-\frac{3}{4}=\begin{cases}-\frac{3}{4} & s=0 \\ 1-\frac{3}{4}=+\frac{1}{4} & s=1\end{cases}\)</p>  
+    <p>\((S_1+S_2)^2=S^2=S_1^2+S_2^2+2S_1\cdot S_2\)</p>
+    <p>quindi si ha \(\Delta E_{\pm}=J_{ab}\pm K_{ab}=J_{ab}-\frac{1}{2}(1+4vec{S_1}\cdot \vec{S_2})K_{ab}=\begin{cases}J_{ab}+K_{ab} & S_{TOT}=0 \\ J_{ab}-K_{ab} & S_{TOT}=1\end{cases}\)</p>
+    <p>Esiste una certo potenziale che dipende dallo spin degli elettroni</p>
+    <img src="materiaimg9.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </body>
 </html>
