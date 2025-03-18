@@ -147,7 +147,7 @@
     <p>\(\langle r \rangle_{1,0}=\int_0^{\infty} r P_{1,0}(r)dr=...=\frac{3a_0}{2 Z}\)</p> 
 <h4>interazione spinorbita</h4>
 <p>abbiamo un nucleo con una carica ed un elettrone che ci gira intorno con una certa orbita di raggio r (in senso antiorario)</p>
-    <p>sediamoci nell'elettrone: il protone gira attorno a me: se l'elettrone è fermo non ha momento angolare orbnitale perchè è fermo, quindi l'unico momento che l'eltrrone sente è quello dello spin. Usiamo la legge di Ampere: \(\vec{B}=-\frac{\mu_0}{4\pi} \frac{\vec{j} \times \vec{r}}{r^3}=\frac{Ze}{4 \pi}\frac{\mu_0 \vec}{v} \times \frac{\vec{r}}{r^3}\)</p>
+    <p>sediamoci nell'elettrone: il protone gira attorno a me: se l'elettrone è fermo non ha momento angolare orbnitale perchè è fermo, quindi l'unico momento che l'eltrrone sente è quello dello spin. Usiamo la legge di Ampere: \(\vec{B}=-\frac{\mu_0}{4\pi} \frac{\vec{j} \times \vec{r}}{r^3}=\frac{Ze}{4 \pi} \mu_0 \vec{v} \times \frac{\vec{r}}{r^3}\)</p>
     <p>\(\vec{L}=m \vec{r} \times \vec{v}\)</p>
     <p>quindi \(\vec{B}=\frac{Z e^2}{4\pi m \varepsilon c^2} \frac{\vec{L}}{r^2r}=\frac{E\vec{L}}{mec^2r}=\frac{\vec{L}}{mec^2r}\frac{dV(r)}{dr}\)</p>
    <p>\(\Delta E=-\vec{\mu_s} \cdot \vec{B}\)</p> 
@@ -329,28 +329,44 @@
     <p>nelle transizione ottiche si ha \(\Delta L=\pm 1\) e \(\Delta S=0\)</p>
     <p>nel caso unidimensionale: una funzione simmetrica spazialmente significa che due elttroni possono stare molto vicini tra loro. Mentre una funzione antisimettrica che fa zero quando i due elettroni sono vicini, quindi nell'origine c'èn un nodo/un punto di flesso. </p>
     <p>\(\rightarrow ^3L \text{ significa distanti mentre } ^1L \text{ significa vicini}\) </p>
- <p>\(\Delta E_{\pm}=\ket{\Psi_{\pm}} ^{\overbrace{\downarrow }^{\ket{x_1,x_2}\bra{x_1,x_2}}}\frac{1}{|\vec{x_1}-\vec{x_2}|}\ket{\Psi_{\pm}}=\frac{1}{2}\int \int d^3x_1\d^3x_2\left[\Psi_a^* (\vec{x_1}) \Psi_b^* (\vec{x_2})\pm \Psi_a^* (\vec{x_2})\Psi_b^* (\vec{x_1})\right]\frac{1}{|\vec{x_1}-\vec{x_2}|}\left[\Psi_a^* (\vec{x_1}) \Psi_b^* (\vec{x_2})\pm \Psi_a^* (\vec{x_2})\Psi_b^* (\vec{x_1})\right]=J_{ab}\pm K_{ab}\)</p>
+ <p>\(\Delta E_{\pm}=\ket{\Psi_{\pm}} ^{\overbrace{\downarrow }^{\ket{x_1,x_2}\bra{x_1,x_2}}}\frac{1}{|\vec{x_1}-\vec{x_2}|}\ket{\Psi_{\pm}}=\frac{1}{2}\int \int d^3x_1d^3x_2\left[\Psi_a^* (\vec{x_1}) \Psi_b^* (\vec{x_2})\pm \Psi_a^* (\vec{x_2})\Psi_b^* (\vec{x_1})\right]\frac{1}{|\vec{x_1}-\vec{x_2}|}\left[\Psi_a^* (\vec{x_1}) \Psi_b^* (\vec{x_2})\pm \Psi_a^* (\vec{x_2})\Psi_b^* (\vec{x_1})\right]=J_{ab}\pm K_{ab}\)</p>
     <p>La funzione d'onda con il + è quella del singoletto, quella del - è quella del tripletto</p>
-    <p>\(J_{ab}=\int \int d^3x_1\d^3x_2 \frac{\left|\Psi_a (\vec{x_1})\right|^2\left|\Psi_b (\vec{x_2})\right|^2}{\left|\vec{x_1}-\vec{x_2}\right|} \)</p>
-    <p>\(K_{ab}=\int \int d^3x_1\d^3x_2 \frac{\Psi_a^* (\vec{x_1} ) \Psi_a^* (\vec{x_2} ) \Psi_b^* (\vec{x_1} ) \Psi_b^* (\vec{x_2} )}{\left|\vec{x_1}-\vec{x_2}\right|} \) "integrale di scambio" o "integrale di Fock": non ha nessun equivalente classico essendo che deriva dalla indistinguibilità delle particelle</p>
+    <p>\(J_{ab}=\int \int d^3x_1d^3x_2 \frac{\left|\Psi_a (\vec{x_1})\right|^2\left|\Psi_b (\vec{x_2})\right|^2}{\left|\vec{x_1}-\vec{x_2}\right|} \)</p>
+    <p>\(K_{ab}=\int \int d^3x_1d^3x_2 \frac{\Psi_a^* (\vec{x_1} ) \Psi_a^* (\vec{x_2} ) \Psi_b^* (\vec{x_1} ) \Psi_b^* (\vec{x_2} )}{\left|\vec{x_1}-\vec{x_2}\right|} \) "integrale di scambio" o "integrale di Fock": non ha nessun equivalente classico essendo che deriva dalla indistinguibilità delle particelle</p>
     <p>\(\Delta E_{pm}= \begin{cases}J_{ab}+K_{ab} & ^1L \\ J_{ab}-K_{ab} & ^3L \end{cases} \)</p>
     <p>la correzione per lo stato del tripletto è più bassa rispetto al caso del singoletto</p>
  <p class="hover-effect"   onmouseover="this.textContent='ciao!!!'"  onmouseout="this.textContent='-.-. .. .- ---!'">-.-. .. .- ---!</p> 
   <p>\(2\vec{S_1}\cdot \vec{S_2}=S^2-S_1^2-S_2^2=S^2-\frac{3}{2}\rightarrow \vec{S_1}\cdot \vec{S_2}=\frac{1}{2}S^2-\frac{3}{4}=\begin{cases}-\frac{3}{4} & s=0 \\ 1-\frac{3}{4}=+\frac{1}{4} & s=1\end{cases}\)</p>  
     <p>\((S_1+S_2)^2=S^2=S_1^2+S_2^2+2S_1\cdot S_2\)</p>
-    <p>quindi si ha \(\Delta E_{\pm}=J_{ab}\pm K_{ab}=J_{ab}-\frac{1}{2}(1+4vec{S_1}\cdot \vec{S_2})K_{ab}=\begin{cases}J_{ab}+K_{ab} & S_{TOT}=0 \\ J_{ab}-K_{ab} & S_{TOT}=1\end{cases}\)</p>
-    <p>Esiste una certo potenziale che dipende dallo spin degli elettroni</p>
+    <p>quindi si ha \(\Delta E_{\pm}=J_{ab}\pm K_{ab}=J_{ab}-\frac{1}{2} \overbrace{(1+4\vec{S_1}\cdot \vec{S_2})}^{\text{forza di scambio}}K_{ab}=\begin{cases}J_{ab}+K_{ab} & S_{TOT}=0 \\ J_{ab}-K_{ab} & S_{TOT}=1\end{cases}\)</p>
+    <p>Esiste un certo potenziale che dipende dallo spin degli elettroni</p>
     <img src="materiaimg9.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <p>_____________________________</p>
+      <p>a grandi Z il secondo termine non è trascurabile perchè essendoci due sommatorie, conto le particelle due volte. Mentre a piccoli Z il primo termine è dominante.</p>
+    <p>\( \hat{h}=\sum_{i=1}^{n}\left[-\frac{\hbar^2}{2m}\nabla_i^2-\frac{Ze^2}{4 \pi \varepsilon_0}\right] +\frac{e^2}{4 \pi \varepsilon_0} \sum_{i=1}^n \sum_{j>i}\frac{1}{|x_i-x_j|}=\sum_{i=1}^n\left[-\frac{\hbar^2}{2m}\nabla^2_i\overbrace{-\frac{Ze^2}{4 \pi \varepsilon_0 x_i}+S(\vec{x_i})}^{V_{eff}}\right]+\left[\frac{e^2}{4 \pi \varepsilon_0} \sum_{i=1}^n \sum_{j>i} \frac{1}{|x_i-x_j|}-\sum_i S(\vec{x_i}) \right]=\underbrace{\left[\sum_{i=1}^n H_i \right]}_{H_C \left( \begin{matrix}\text{hamiltoniana del campo centrale}\\ \text{oppure} \\  \text{hamiltoniana del campo medio}\right)} +H' \)</p>
+  <p>alla fine ho il termine coulombiano con gli effetti di scheremaggio (la fortissima attrazione con il nucleo diminuisce a causa della presenza di altri di elettroni che ci scherma questa interazione) + il termine coulombiano tolto i contributi sferici: ora posso considerare H' come termine di perturbazione</p>
+<p>limiti che possiamo individuare con questo potenziale effettivo: limite in cui l'elettrone è molto lontano rispetto a tutti gli altri elettroni (\(r_i \rightarrow +\infty\)) e in quetso caso si ha \(V^{eff} (r_i)=-\frac{Z}{r_i}+\frac{n-1}{r_i}\) per un atomo neutro che il potenziale effettivo è circa \(\sim -\frac{1}{r_i}\)</p>
+<p>Un altro limite dove l'elettrone è vicinissimo al nucleo e tutti gli altri elettroni sono lontani  (\(r_i \rightarrow 0\)) e quindi si ha \(V^{eff} (r) \sim \frac{Z}{r}\)</p>
+<p>\(V_{eff}=-\frac{Z(r) e^2}{4 \pi \varepsilon_0}\) quando elettrone è vicino al nucleo si ha \(V_{eff}=-\frac{1}{r}\) mentre quando è lontano si ha \(V_{eff}=-\frac{Z}{r}\)</p>
+    <p>\(\hat{H_C}=\sum_{i=1}^n \left[- \frac{1}{2} \nabla_i^2-\frac{Z}{x_i}+\overbrace{S(\vec{x_i})}^{\text{potenziale di Hartree}}\right]\)</p>
+    <p>\(\hat{H_C} \ket{\Psi}=\sum_{i=1}^n \hat{H_i} \ket{\Psi} =\ket{\Psi} \sum_i E_i=E \ket{\Psi}\)</p>
+    <p onclick="let a='abcdn';let l=Math.floor(Math.random()*a.length);this.textContent='\\(\\Psi = \\Psi_a  (\\vec{x_1}) \\Psi_b  (\\vec{x_2}) ... \\Psi_n  (\\vec{x_n})\\) con \\('+a[l]+'\\equiv (n_'+a[l]+',l_'+a[l]+',m_{l_'+a[l]+'})\\)'; ">\(\Psi = \Psi_a  (\vec{x_1}) \Psi_b  (\vec{x_2}) ... \Psi_n  (\vec{x_n})\) con \(i \equiv (n_i,l_i,m_{l_i})\)</p>
+    <p>\(H_i \Psi_i=E_i \Psi_i\)</p>
+    <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=\underbrace{u_{n,l,m_l} (\vec{x})}_{R_{n,l} (r) Y_l^m (\theta, \phi)} \chi_{\frac{1}{2},m_s}\)</p>
+<p>metodo di Hartree</p>
+    <p>funzionale di Haartree \(\bra{\Psi} \sum_i -\frac{1}{2} \nabla_i^2 -\frac{Z}{x_i}+\sum_i \sum_j \frac{1}{x_{ij}}\ket{\Psi}\), s</p>
+    <p>\(\lambda \delta \bra{\Psi} \ket{\Psi}=0\)</p>
+<p>se minimizzo il funzionale imponendo l'ortogonalità, sono le funzioni che soddisfano le equazioni di Schrodinger</p>
+    <p>\(\left[-\frac{1}{2} \nabla_i^2 -\frac{Z}{x_i}+\underbrace{\sum_{j\neq i}^n \bra{u_j} \frac{1}{x_{ij}}\ket{u_j}}_{S} \right]u_i=E_i u_i\)</p>
+    <p>i moltiplicatori di Lagrange per vincolare l'ortonormalità sono \(E_i\)</p>
+    <p>\(S(\vec{x_i})=\sum_{j \neq i}^n \bra{u_j} \frac{1}{x_{ij}}\ket{u_j}= \sum_{j \neq i}^n   \int d^3 \vec{x} u^*_j (\vec{x_j}) \frac{1}{|x_i-x_j|}u_j (\vec{x_j})= \sum_{j \neq i}^n d^3 \vec{x} \frac{\rho_j (\vec{x_j})}{|\vec{x_i}-\vec{x_j}|}\)</p>
+   <p>S dipende dalle funzioni d'onda</p> 
+    <p><strong>metodo di autoconsistenza:</strong></p>
+    <p>\(\bullet\) Inizio S^{(0)} (\vec{x_i}\) faccio una guess iniziale </p>
+    <p>\(\bullet \left[-\frac{1}{2} \nabla_i^2-\frac{Z}{x_i}+S^{(0)} (x_i) \right] u_i=Eu_i\) </p>
+    <p>\(u_i^{(0)} \forall i\)</p>
+    <p> \(\bullet  S^{(1)} (\vec{x_i})=\sum_{j \neq i}^n \bra{u_j^{(0)}}\frac{1}{|x_{ij}|}\ket{u_j^{(0)}} \)</p>
+    <p>\(\bullet\) ritorno allo step 2</p>
     
     
     
