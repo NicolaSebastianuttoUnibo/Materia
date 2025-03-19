@@ -343,7 +343,7 @@
     <img src="materiaimg9.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
     <p>_____________________________</p>
       <p>a grandi Z il secondo termine non è trascurabile perchè essendoci due sommatorie, conto le particelle due volte. Mentre a piccoli Z il primo termine è dominante.</p>
-    <p>\( \hat{h}=\sum_{i=1}^{n}\left[-\frac{\hbar^2}{2m}\nabla_i^2-\frac{Ze^2}{4 \pi \varepsilon_0}\right] +\frac{e^2}{4 \pi \varepsilon_0} \sum_{i=1}^n \sum_{j>i}\frac{1}{|x_i-x_j|}=\sum_{i=1}^n\left[-\frac{\hbar^2}{2m}\nabla^2_i\overbrace{-\frac{Ze^2}{4 \pi \varepsilon_0 x_i}+S(\vec{x_i})}^{V_{eff}}\right]+\left[\frac{e^2}{4 \pi \varepsilon_0} \sum_{i=1}^n \sum_{j>i} \frac{1}{|x_i-x_j|}-\sum_i S(\vec{x_i}) \right]=\underbrace{\left[\sum_{i=1}^n H_i \right]}_{H_C \left( \begin{matrix}\text{hamiltoniana del campo centrale}\\ \text{oppure} \\  \text{hamiltoniana del campo medio}\right)} +H' \)</p>
+    <p>\( \hat{h}=\sum_{i=1}^{n}\left[-\frac{\hbar^2}{2m}\nabla_i^2-\frac{Ze^2}{4 \pi \varepsilon_0}\right] +\frac{e^2}{4 \pi \varepsilon_0} \sum_{i=1}^n \sum_{j>i}\frac{1}{|x_i-x_j|}=\sum_{i=1}^n\left[-\frac{\hbar^2}{2m}\nabla^2_i\overbrace{-\frac{Ze^2}{4 \pi \varepsilon_0 x_i}+S(\vec{x_i})}^{V_{eff}}\right]+\left[\frac{e^2}{4 \pi \varepsilon_0} \sum_{i=1}^n \sum_{j>i} \frac{1}{|x_i-x_j|}-\sum_i S(\vec{x_i}) \right]=\underbrace{\left[\sum_{i=1}^n H_i \right]}_{H_C \left( \begin{matrix}\text{hamiltoniana del campo centrale}\\ \text{oppure} \\  \text{hamiltoniana del campo medio} \end{matrix} \right)} +H' \)</p>
   <p>alla fine ho il termine coulombiano con gli effetti di scheremaggio (la fortissima attrazione con il nucleo diminuisce a causa della presenza di altri di elettroni che ci scherma questa interazione) + il termine coulombiano tolto i contributi sferici: ora posso considerare H' come termine di perturbazione</p>
 <p>limiti che possiamo individuare con questo potenziale effettivo: limite in cui l'elettrone è molto lontano rispetto a tutti gli altri elettroni (\(r_i \rightarrow +\infty\)) e in quetso caso si ha \(V^{eff} (r_i)=-\frac{Z}{r_i}+\frac{n-1}{r_i}\) per un atomo neutro che il potenziale effettivo è circa \(\sim -\frac{1}{r_i}\)</p>
 <p>Un altro limite dove l'elettrone è vicinissimo al nucleo e tutti gli altri elettroni sono lontani  (\(r_i \rightarrow 0\)) e quindi si ha \(V^{eff} (r) \sim \frac{Z}{r}\)</p>
@@ -362,17 +362,31 @@
     <p>\(S(\vec{x_i})=\sum_{j \neq i}^n \bra{u_j} \frac{1}{x_{ij}}\ket{u_j}= \sum_{j \neq i}^n   \int d^3 \vec{x} u^*_j (\vec{x_j}) \frac{1}{|x_i-x_j|}u_j (\vec{x_j})= \sum_{j \neq i}^n d^3 \vec{x} \frac{\rho_j (\vec{x_j})}{|\vec{x_i}-\vec{x_j}|}\)</p>
    <p>S dipende dalle funzioni d'onda</p> 
     <p><strong>metodo di autoconsistenza:</strong></p>
-    <p>\(\bullet\) Inizio S^{(0)} (\vec{x_i}\) faccio una guess iniziale </p>
+    <p>\(\bullet\) Inizio \(S^{(0)} (\vec{x_i})\) faccio una guess iniziale </p>
     <p>\(\bullet \left[-\frac{1}{2} \nabla_i^2-\frac{Z}{x_i}+S^{(0)} (x_i) \right] u_i=Eu_i\) </p>
     <p>\(u_i^{(0)} \forall i\)</p>
     <p> \(\bullet  S^{(1)} (\vec{x_i})=\sum_{j \neq i}^n \bra{u_j^{(0)}}\frac{1}{|x_{ij}|}\ket{u_j^{(0)}} \)</p>
     <p>\(\bullet\) ritorno allo step 2</p>
-    
-    
-    
-    
-    
-    
+    <p>_______________</p>
+    <p>\(\left[-\frac{1}{2}\nabla_i^2-\frac{Z}{x_i}+S(\vec{x_i})\left]u_i=\left[ -\frac{1}{2}\nabla_i^2-\frac{Z}{x_i}+\sum_{j=1}^n \bra{u_j}\frac{1}{x_j}\ket{u_j}\left]u_i=E_iu_i\)</p>
+    <p>\(\Psi (\vec{x_1,\sigma_1},\vec{x_2,\sigma_2},...,\vec{x_n,\sigma_n})=\Psi_a (\vec{x_1})\Psi_a (\vec{x_1})\Psi_b (\vec{x_2})...\Psi_{\mu} (\vec{x_n})\)</p>
+    <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=u_{n,l,m_l} (\vec{x}) \chi_{s=\frac{1}{2},m_s}\)</p>
+    <p>\(u_i(\vec{x})=\sum_{j=1}^M c_j \Phi_j (\vec{x})\)</p>
+    <p>\(\Phi_{n,l,m_l} (\vec{x})=r^{n-1}e^{-\alpha r} Y_{l,m} (\theta ,\phi )\) funzioni di Slater</p>
+<p>\(H_{nm} \begin{pmatrix} c_1 \\ \vdots \\ \c_n \end{pmatrix}=E \begin{pmatrix} c_1 \\ \vdots \\ \c_n \end{pmatrix}\)</p>
+    <img src="materiaimg10.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
+    <h5>Determinante di Slater</h5>
+    <p>\(\Psi  (\vec{x_1}\sigma_1,\vec{x_2}\sigma_2, \cdots, \vec{x_n}\sigma_n)=\frac{1}{\sqrt{N!}} \begin{vmatrix} \Psi_{a} (\vec{x_1}) & \Psi_{b} (\vec{x_1})& \cdots & \Psi_{\mu} (\vec{x_1}) \\ \Psi_{a} (\vec{x_2}) & \Psi_{b} (\vec{x_2})& \cdots & \Psi_{\mu} (\vec{x_2}) \\ \vdots & \vdots & \ddots & \vdots \\ \Psi_{a} (\vec{x_n}) & \Psi_{b} (\vec{x_n})& \cdots & \Psi_{\mu} (\vec{x_n})\end{vmatrix} = {\color{rgb(0,205,20)}-}\Psi (\vec{x_2}\sigma_2,\vec{x_1}\sigma_1,\cdots)\)</p>
+    <p>\(\left[\frac{1}{2}\nabla_i^2 -\frac{Z}{x_i}+\sum{j\neq i}^n \bra{u_j}\frac{1}{x_{ij}}\ket{u_j}\left]u_i-\left[\sum_{j \neq i}^n \bra{u_j}\frac{1}{x_{ij}} \ket{u_i} \overbrace {\delta_{m_{s_i},m_{s_j}}}^{\text{favorisce gli spin paralleli: lo dice Hund}} u_j \right] =E u_i\)</p>
+    <p> per \(n=2\) si ha \(\frac{1}{\sqrt{2}}\left[\Psi_{a} (\vec{x_1}) \Psi_{b} (\vec{x_2})-\Psi_{b} (\vec{x_1})\Psi_{a} (\vec{x_2})\right]\)</p>
+<p>\(\bullet\)H \(1s^1, n=1,l=0,ms=1/2 \rightarrow L=0,S=1/2,J=1/2\rightarrow 1 ^2S_{1/2}\)</p>
+    <p>\(\bullet\)He \(1s^2, n=1,l=0,ms=\pm1/2 \rightarrow L=0,S=0,J=0\rightarrow 1 ^1S_{0}\) (questa è una shell piena )</p>
+<p>\(\bullet\)Li \(1s^22s^1\equiv [He]2s^1 L=0,S=1/2,J=1/2\rightarrow 2 ^2S_{1/2}\)</p>
+    <p>\(\bullet\)Ne \([He]2s^22p^6 L=0,S=0,J=0\)</p>
+    <p>\(\bullet\)C \([He]2s^22p^2 \)</p>
+    <p>il il livello energetico del 4s è più basso del 3d</p>
+
+
     
 </body>
 </html>
