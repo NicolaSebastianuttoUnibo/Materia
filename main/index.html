@@ -138,7 +138,7 @@
     <h2>Esercizi</h2>
     <p>\(E_n=\frac{13.6 eV}{n^2}\)</p>
     <p>\(E_1=13.6 eV\),\(E_2=3,39 eV\)</p>
-    <p>\(\frac{n_2 (T)}{n_1 (T)}=\frac{e^{-\frac{E_2}{kT}}{e^{-\frac{E_1}{kT}}}=e^{-1,18*10^{-5} K/T} \rightarrow T\sim 10^5 K\)</p>
+    <p>\(\frac{n_2 (T)}{n_1 (T)}=\frac{e^{-\frac{E_2}{kT}}}{e^{-\frac{E_1}{kT}}}=e^{-1,18*10^{-5} K/T} \rightarrow T\sim 10^5 K\)</p>
     <p>....</p>
     <p> n=1 l=0  \(R_{1,0}(r)=\mathscr{L} \left( \frac{Z}{a_0} \right)^{3/2}e^{-Z r/a_0}\)</p>
     <p>\(P_{1,0} (r)=r^2 |R_{1,0}(r)|^2=4 r^2 \left( \frac{Z}{a_0} \right)^{3}e^{-2Z r/a_0}\)</p>
@@ -350,11 +350,11 @@
 <p>\(V_{eff}=-\frac{Z(r) e^2}{4 \pi \varepsilon_0}\) quando elettrone è vicino al nucleo si ha \(V_{eff}=-\frac{1}{r}\) mentre quando è lontano si ha \(V_{eff}=-\frac{Z}{r}\)</p>
     <p>\(\hat{H_C}=\sum_{i=1}^n \left[- \frac{1}{2} \nabla_i^2-\frac{Z}{x_i}+\overbrace{S(\vec{x_i})}^{\text{potenziale di Hartree}}\right]\)</p>
     <p>\(\hat{H_C} \ket{\Psi}=\sum_{i=1}^n \hat{H_i} \ket{\Psi} =\ket{\Psi} \sum_i E_i=E \ket{\Psi}\)</p>
-    <p onclick="let a='abcdn';let l=Math.floor(Math.random()*a.length);this.textContent='\\(\\Psi = \\Psi_a  (\\vec{x_1}) \\Psi_b  (\\vec{x_2}) ... \\Psi_n  (\\vec{x_n})\\) con \\('+a[l]+'\\equiv (n_'+a[l]+',l_'+a[l]+',m_{l_'+a[l]+'})\\)'; ">\(\Psi = \Psi_a  (\vec{x_1}) \Psi_b  (\vec{x_2}) ... \Psi_n  (\vec{x_n})\) con \(i \equiv (n_i,l_i,m_{l_i})\)</p>
+    <p onclick="let a='abcdn';let l=Math.floor(Math.random()*a.length);this.textContent='\\(\\Psi = \\Psi_a  (\\vec{x_1}) \\Psi_b  (\\vec{x_2}) ... \\Psi_n  (\\vec{x_n})\\) con \\('+a[l]+'\\equiv (n_'+a[l]+',l_'+a[l]+',m_{l_'+a[l]+'})\\)'; MathJax.typeset(); ">\(\Psi = \Psi_a  (\vec{x_1}) \Psi_b  (\vec{x_2}) ... \Psi_n  (\vec{x_n})\) con \(i \equiv (n_i,l_i,m_{l_i})\)</p>
     <p>\(H_i \Psi_i=E_i \Psi_i\)</p>
     <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=\underbrace{u_{n,l,m_l} (\vec{x})}_{R_{n,l} (r) Y_l^m (\theta, \phi)} \chi_{\frac{1}{2},m_s}\)</p>
 <p>metodo di Hartree</p>
-    <p>funzionale di Haartree \(\bra{\Psi} \sum_i -\frac{1}{2} \nabla_i^2 -\frac{Z}{x_i}+\sum_i \sum_j \frac{1}{x_{ij}}\ket{\Psi}\), s</p>
+    <p>funzionale di Haartree \(\bra{\Psi} \sum_i -\frac{1}{2} \nabla_i^2 -\frac{Z}{x_i}+\sum_i \sum_j \frac{1}{x_{ij}}\ket{\Psi}\)</p>
     <p>\(\lambda \delta \bra{\Psi} \ket{\Psi}=0\)</p>
 <p>se minimizzo il funzionale imponendo l'ortogonalità, sono le funzioni che soddisfano le equazioni di Schrodinger</p>
     <p>\(\left[-\frac{1}{2} \nabla_i^2 -\frac{Z}{x_i}+\underbrace{\sum_{j\neq i}^n \bra{u_j} \frac{1}{x_{ij}}\ket{u_j}}_{S} \right]u_i=E_i u_i\)</p>
@@ -368,16 +368,16 @@
     <p> \(\bullet  S^{(1)} (\vec{x_i})=\sum_{j \neq i}^n \bra{u_j^{(0)}}\frac{1}{|x_{ij}|}\ket{u_j^{(0)}} \)</p>
     <p>\(\bullet\) ritorno allo step 2</p>
     <p>_______________</p>
-    <p>\(\left[-\frac{1}{2}\nabla_i^2-\frac{Z}{x_i}+S(\vec{x_i})\left]u_i=\left[ -\frac{1}{2}\nabla_i^2-\frac{Z}{x_i}+\sum_{j=1}^n \bra{u_j}\frac{1}{x_j}\ket{u_j}\left]u_i=E_iu_i\)</p>
-    <p>\(\Psi (\vec{x_1,\sigma_1},\vec{x_2,\sigma_2},...,\vec{x_n,\sigma_n})=\Psi_a (\vec{x_1})\Psi_a (\vec{x_1})\Psi_b (\vec{x_2})...\Psi_{\mu} (\vec{x_n})\)</p>
+    <p>\(\left[-\frac{1}{2}\nabla_i^2-\frac{Z}{x_i}+S(\vec{x_i})\right]u_i=\left[ -\frac{1}{2}\nabla_i^2-\frac{Z}{x_i}+\sum_{j=1}^n \bra{u_j}\frac{1}{x_j}\ket{u_j}\right]u_i=E_iu_i\)</p>
+    <p>\(\Psi (\vec{x_1},\sigma_1,\vec{x_2},\sigma_2,...,\vec{x_n},\sigma_n)=\Psi_a (\vec{x_1})\Psi_a (\vec{x_1})\Psi_b (\vec{x_2})...\Psi_{\mu} (\vec{x_n})\)</p>
     <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=u_{n,l,m_l} (\vec{x}) \chi_{s=\frac{1}{2},m_s}\)</p>
     <p>\(u_i(\vec{x})=\sum_{j=1}^M c_j \Phi_j (\vec{x})\)</p>
     <p>\(\Phi_{n,l,m_l} (\vec{x})=r^{n-1}e^{-\alpha r} Y_{l,m} (\theta ,\phi )\) funzioni di Slater</p>
-<p>\(H_{nm} \begin{pmatrix} c_1 \\ \vdots \\ \c_n \end{pmatrix}=E \begin{pmatrix} c_1 \\ \vdots \\ \c_n \end{pmatrix}\)</p>
+<p>\(H_{nm} \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}=E \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}\)</p>
     <img src="materiaimg10.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
     <h5>Determinante di Slater</h5>
     <p>\(\Psi  (\vec{x_1}\sigma_1,\vec{x_2}\sigma_2, \cdots, \vec{x_n}\sigma_n)=\frac{1}{\sqrt{N!}} \begin{vmatrix} \Psi_{a} (\vec{x_1}) & \Psi_{b} (\vec{x_1})& \cdots & \Psi_{\mu} (\vec{x_1}) \\ \Psi_{a} (\vec{x_2}) & \Psi_{b} (\vec{x_2})& \cdots & \Psi_{\mu} (\vec{x_2}) \\ \vdots & \vdots & \ddots & \vdots \\ \Psi_{a} (\vec{x_n}) & \Psi_{b} (\vec{x_n})& \cdots & \Psi_{\mu} (\vec{x_n})\end{vmatrix} = {\color{rgb(0,205,20)}-}\Psi (\vec{x_2}\sigma_2,\vec{x_1}\sigma_1,\cdots)\)</p>
-    <p>\(\left[\frac{1}{2}\nabla_i^2 -\frac{Z}{x_i}+\sum{j\neq i}^n \bra{u_j}\frac{1}{x_{ij}}\ket{u_j}\left]u_i-\left[\sum_{j \neq i}^n \bra{u_j}\frac{1}{x_{ij}} \ket{u_i} \overbrace {\delta_{m_{s_i},m_{s_j}}}^{\text{favorisce gli spin paralleli: lo dice Hund}} u_j \right] =E u_i\)</p>
+    <p>\(\left[\frac{1}{2}\nabla_i^2 -\frac{Z}{x_i}+\sum{j\neq i}^n \bra{u_j}\frac{1}{x_{ij}}\ket{u_j}\right]u_i-\left[\sum_{j \neq i}^n \bra{u_j}\frac{1}{x_{ij}} \ket{u_i} \overbrace {\delta_{m_{s_i},m_{s_j}}}^{\text{favorisce gli spin paralleli: lo dice Hund}} u_j \right] =E u_i\)</p>
     <p> per \(n=2\) si ha \(\frac{1}{\sqrt{2}}\left[\Psi_{a} (\vec{x_1}) \Psi_{b} (\vec{x_2})-\Psi_{b} (\vec{x_1})\Psi_{a} (\vec{x_2})\right]\)</p>
 <p>\(\bullet\)H \(1s^1, n=1,l=0,ms=1/2 \rightarrow L=0,S=1/2,J=1/2\rightarrow 1 ^2S_{1/2}\)</p>
     <p>\(\bullet\)He \(1s^2, n=1,l=0,ms=\pm1/2 \rightarrow L=0,S=0,J=0\rightarrow 1 ^1S_{0}\) (questa è una shell piena )</p>
