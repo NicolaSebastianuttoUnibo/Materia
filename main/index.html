@@ -441,7 +441,7 @@
 <p>\(\Delta \lambda=c \mu^{-2} \Delta \mu\)</p>
     <p>\(d \lambda=-c \mu^{-2} d\mu=-\frac{c \hbar  \Delta h \mu}{h^2 \mu^2}=5900 \pm 2,535  \overset{o}{\text{A}}\) Doppietto D del sodio</p>
     <h4>Altro esercizio</h4>
-<p>\(Ne \quad \begin{matrix}E_1=16,8 eV \\ E_2=19,8 eV\e+nd{matrix}\)</p>
+<p>\(Ne \quad \begin{matrix}E_1=16,8 eV \\ E_2=19,8 eV\end{matrix}\)</p>
 <p>\(1s^2 2s^2 2p^6 \rightarrow 2 ^1S_0\)</p>
     <p>\(1s^2 2s^2 2p 3s 3p  4s 3d\)</p>      
 <p>\(Ne \quad \begin{matrix}E_1=16,8 eV & 2p^6 \rightarrow 2p^5  3s^1 \\ E_2=19,8 eV & 2p^6 \rightarrow 2p^5  4s^1\end{matrix}\)</p>
@@ -556,7 +556,7 @@
 <p>l'integrale di un orbitale simmetrico moltiplicato per un oggetto antisimettrico di tipo \(Y_{1m}\) moltiplicato per unn orbitale antisimettrico è simmetrico quindi diverso da zero </p>
     <p>consideriamo \({\Psi_1}_l \quad {\Psi_2}_{l+1}\) da cui deriva il fatto che \(\Delta l= \pm 1\)</p>
     <p>scriviamo la hamiltoniana che è influenzata dal campo magnetico esterno dipendente dal tempo usando la teoria delle perturbazioni: voglio studiare come cambiano i coefficienti nel tempo.</p>
-    <p>\(H=\frac{1}{2m}(\vec{p}-evec{A})^2-\frac{Ze^2}{4 \pi \varepsilon_0 r}-e \Phi\)</p>
+    <p>\(H=\frac{1}{2m}(\vec{p}-e \vec{A})^2-\frac{Ze^2}{4 \pi \varepsilon_0 r}-e \Phi\)</p>
    <p>\( \vec{B}= \nabla \times \vec{A}\)</p> 
     <p>\(\vec{E}=-\nabla \Phi-\frac{\partial A}{\partial t}\)</p>
     <p>\(\vec{A'}=\vec{A}+\nabla \xi \qquad \Phi'=\Phi-\frac{\partial \xi}{\partial t}\)</p>
@@ -571,22 +571,46 @@
     <p>\(\dot{c_b} (t) =\frac{\lambda}{i \hbar} \sum_k H'_{bk} (t) c_k (t) e^{i w_{bk} t}\)</p>
     <p>\(H'_{bk}= \bra{\Psi_b} \hat{H'} \ket{\Psi_k} \qquad w_{bk}=\frac{E_b-E_k}{\hbar}\)</p>
     <p>\(\begin{matrix} \underline{\vdots \qquad} \\ \underline{k=3}  \\ \underline{k=2} \\ \underline{k=2}  \end{matrix}\)</p>
-<p>\(c_k (t)=c_k^0(t)+\lmabda c_k' (t) +\lmanda^2 c_k^2 (t) \cdots\)</p>
+<p>\(c_k (t)=c_k^0(t)+\lambda c_k' (t) +\lambda^2 c_k^2 (t) \cdots\)</p>
     <p>\(\begin{cases}  \dot{c_b^0}=0 \\ \dot{c_b^1}=\frac{1}{i \hbar \sum_k H_{bk}' (t) c^0_k e^{iw_{bk}t}} \\ vdots \dot{c_b^{s+1}}=\frac{1}{i \hbar \sum_k H_{bk}' (t) c^s_k e^{iw_{bk}t}}   \end{cases}\)</p>
 <p>\(\nabla^2 \vec{A}=\frac{1}{c^2}\frac{\partial A }{\partial t}=0\)</p>
     <p>\(\vec{A}(w,\vec{r},t)=A_0 (w) \hat{\varepsilon} \left[e^{i (\vec{k} \cdot \vec{r}-wt +\delta_w ) }+coniugato complesso \right]\)</p>
-    <p>\(\vec{A} (\vec{r },t) =\int_{-\infty}^{+\infty} \vec{A} (w, \vec{r},t} dw\)</p>
+    <p>\(\vec{A} (\vec{r},t) =\int_{-\infty}^{+\infty} \vec{A} (w, \vec{r},t) dw\)</p>
 <p>\(c_b^1 (t) = \int_0^t c_b^1 (t) dt=\frac{1}{i \hbar} \int_0^t H_{ba}' (t') e^{iw_{ba}t'}dt'=-\frac{e}{m} \int_0^t \bra{\Psi_b} \hat{\vec{A}} \cdot \nabla \ket{\Psi_b} e^{iw_{ba}t'}dt'\)</p>
-
-
-
-
-
-
-
-
-
-
+<hr>
+    <p>\(H \Psi=\left[\frac{1}{2m} (\vec{p}+e\vec{A})^2-e \Phi \right] \Psi-\underbrace{\frac{1}{2m}(\frac{\hbar}{i}\nabla+e \vec{A})^2}_{\frac{1}{2m} (-\hbar^2 \nabla^2+\frac{\hbar e}{i} \nabla \cdot \vec{A}+\frac{\hbar e}{i}   \vec{A} \cdot \nabla +e^2A^2)\Psi} \Psi-e \Phi\Psi\)</p>
+    <p>\( |\vec{A}| \gg A^2\)</p>
+    <p>\(\nabla A \Psi=(\nabla \cdot \vec{A}) \Psi +\vec{A} \nabla \Psi\)</p>
+    <p>\(H' (\vec{r},t)=\frac{\hbar e}{im} \vec{A} (\vec{r},t) \cdot \nabla\)</p>
+    <p>\(\vec{A} (\vec{r},t)= \vec{\varepsilon} \int_{-\infty}^{+\infty}dw A_0 (w) (e^{i (\vec{k} \cdot \vec{r}-wt \delta_w)}+ coniugato complesso (c.c))\)</p>
+    <p>\(c^1_b (t)= \int_0^t \dot{c_b^1}(t')dt'=\frac{1}{i \hbar} \int_0^t H'_{ba} (t') e^{iw_{ba}t'}=-\frac{e}{m}\int_0^t \bra{\Psi_b} \vec{A} \cdot \nabla \ket{\Psi_a} e^{iw_{ba}t'}dt'\)</p>
+<p>\(c_b^1 (t)=-\frac{e}{m}\int_{-\infty}^{+\infty} dw A_0 (w) \left{ e^{i \delta_w}\bra{\Psi_b} e^{i\vce{k}\cdot\vec{r}} \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \int_0^t e^{i(w_{ba}-w)t'}dt'+e^{-i\delta_w} \bra{\Psi_b} e^{-i\vce{k}\cdot\vec{r}} \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \int_0^t e^{i(w_{ba}+w)t'}dt' \right}\)</p>
+    <p>\(\int_0^t e^{i(w_{ba}-w)t'} =\frac{e^{i(w_{ba}-w)t}-1}{i(w_{ba}-w)}\) con \(w \sim -w_{ba}\) processo di assorbimento</p>
+    <p>\(\int_0^t e^{i(w_{ba}+w)t'} =\frac{e^{i(w_{ba}-w)t}-1}{i(w_{ba}+w)}\) con \(w \sim -w_{ba}\) processo di emissione</p>
+    <p> entrambi i processi sono di natura <strong>stimolata</strong>, quindi non è spontaneo</p>
+<p>\(T_{ab}=\frac{2\pi}{w_{ba}}\sim10^{-15} sec \ll t  \text{tempo tipico dell'esposizione all'onda EM}\)</p>
+    <p>\(c_b^1 (t) =-\frac{e}{m} \int_{-\infty}^{+\infty} dw A_0 (w) e^{i \delta_w} M_{ba} \frac{e^{i(w_{ba}-w)t}-1}{i(w_{ba}-w)} \sim -\frac{e}{m}A-0 (w_{ba} M_{ba} \int_{-\infty}^{+\infty} dw e^{i \delta_w} \frac{e^{i(\overbrace{w_{ba}}^{\overline{w}}-w)t}-1}{i(w_{ba}-w)} \)</p>
+<p>\(\frac{e^{i \overline{w} t}-1}{i \overline{w}} \cdot \frac{e^{-i \overline{w} t}-1}{-i \overline{w}}=\frac{1- 2\cos{\overline{w}t}}{\overline{w}^2}=2 \boxed{\frac{2 \sin^2{\frac{\overline{w}t}{2}}}{\overline{w}^2}}=2 F(t, \overline{w})\)</p>
+<p>\(\lim_{\overline{w} \rightarrow 0} F(\ovelrine{w},t)=2 \frac{\left( \frac{\overline{w} t}{2}\right)^2}{\overline{w}^2}=\frac{t^2}{2}\)</p>
+<p>\(\left|c^1_b (t) \right|^2=2\frac{e^2}{m^2}A^2_0 (w_{ba}) \left| M_{ba} (w_{ba})\right|^2 \int_{-\infty}^{+\infty} dw F (t, w_{ba}-w)=2\pi  \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) \left| M_{ba} (w_{ba})\right|^2 t\)</p>
+    <p> rate di transizione\(W_{ba}?{assorbimento}=\frac{d}{dt} |c^1_b|^2=2\pi \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) |M_{ab} (w_{ab})|^2\)</p>
+<p>\(W^{emissione}= W^{assorbimento}\) bilancio dettagliato (detailed balanced)</p>
+<p>\(M_{ba] (w)=\bra{\Psi_b e^{-i \vec{k} \cdot \vec{r}} } \vec{\varepsilon} \cdot \nabla \ket{\Psi_a}\) \sim \cdots</p>
+    <p>approsimazione di dipolo \( e^{-i \vec{k} \cdot \vec{r}}=1-i \vec{k} \cdot \vec{r}+\cdots\) \sim 1</p>
+    <p>\(| \vec{r} | \sim \overset{o}{\text{A}}</p>
+    <p>\(|\vec{k}| \sim\frac{2 \pi}{\lamda} \)</p>
+    <p>\(|i \vec{k} \cdot \vec{r}|\sim 1\)</p>
+    <p>\(\cdots \sim  \vec{\varepsilon}  \bra{\Psi_b} \nabla \ket{\Psi_a} =\frac{i}{\hbar} \vec{\varepsilon}  \bra{\Psi_a} \hat{\vec{p}} \ket {\Psi_a}= \cdots\)</p>
+    <p>\(\hat{\vec{p}}= \frac{m}{i \hbar}\left[ \hat{r}, \hat{H_0} \right] =\frac{m}{i \hbar} [\hat{r}, \frac{\hat{p}^2}{2m}+V(\vec{r})]=\frac{m}{i\hbar}[\vec{r},\frac{\hat{p}^2}{2m}]\)</p>
+    <p>\(\frac{m}{i \hbar}[\vec{r},-\frac{\hbar^2}{2m}\nabla^2]f(\vce{r})=\frac{m}{i \hbar}\left( -\frac{\hbar^2}{2m}\right) \left{ r \nabla^2 f-\nabla^2 rf\right}=-\frac{\hbar}{i2}\left{ r \nabla^2 f -2 \nabla f-r \nabla^2 f \right}= \hat{\vec{p}}f\)</p>
+<p>\(\cdots = \frac{m}{\hbar^2}\vec{\varepsilon} \bra{\Psi_b}[\hat{r},\hat{H_0}]\ket{\Psi_a}= \frac{m}{\hbar^2}\vec{\varepsilon} \bra{\Psi_b}\hat{r}\hat{H_0}-\hat{H_0}\hat{r}\ket{\Psi_a}=\frac{m}{\hbar^2}\vec{\varepsilon}(E_a-E_b) \bra{\Psi_b} \hat{\vec{r}} \ket{\Psi_a}=-\frac{m}{\hbar}w_{ba} \vec{\varepsilon} \hat{\vec{r_{ba}}}\)</p>
+    <p>\(W_{ba}=2 \pi \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) |M_{ba}|^2 \propto |\vec{\varepsilon} \cdot \hat{\vec{D}}|^2\)</p>
+    <p>\(\langle |\vec{\varepsilon} \cdot \vec{D}|^" \rangle = \langle \cos^2 \theta \langle_}{} \vec}{D}|\)
+    </p>
+    <p>\(\vec{\varepsilon} \cdot \vec{D} = D \cos \theta\)</p>
+    <p>\(W_{ba} \propto \frac{1}{3} |\vec{D}|^2\)</p>
+    <p>\(\int_{-\infty}^{+\infty} \int_=^{2\pi} \int_0^{\pi} \Psi_b^* (r, tehta, \phi) \vec{r} \Psi_a (r, \theta, \phi) \underbrace{\sin \theta d \theta d \phi dr}_{d^3 \vec{r}}\)</p>
+<p>\(P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \theta} \begin{pmatrix} x \\y \\z \end{pmatrix}=\begin{pmatrix} r \sin \theta \cos \phi \\ r \sin \theta r \sin \phi \\ r \cos \theta\) P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \phi}</p>
 
 
 
