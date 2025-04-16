@@ -584,37 +584,57 @@
     <p>\(H' (\vec{r},t)=\frac{\hbar e}{im} \vec{A} (\vec{r},t) \cdot \nabla\)</p>
     <p>\(\vec{A} (\vec{r},t)= \vec{\varepsilon} \int_{-\infty}^{+\infty}dw A_0 (w) (e^{i (\vec{k} \cdot \vec{r}-wt \delta_w)}+ coniugato complesso (c.c))\)</p>
     <p>\(c^1_b (t)= \int_0^t \dot{c_b^1}(t')dt'=\frac{1}{i \hbar} \int_0^t H'_{ba} (t') e^{iw_{ba}t'}=-\frac{e}{m}\int_0^t \bra{\Psi_b} \vec{A} \cdot \nabla \ket{\Psi_a} e^{iw_{ba}t'}dt'\)</p>
-<p>\(c_b^1 (t)=-\frac{e}{m}\int_{-\infty}^{+\infty} dw A_0 (w) \left{ e^{i \delta_w}\bra{\Psi_b} e^{i\vce{k}\cdot\vec{r}} \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \int_0^t e^{i(w_{ba}-w)t'}dt'+e^{-i\delta_w} \bra{\Psi_b} e^{-i\vce{k}\cdot\vec{r}} \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \int_0^t e^{i(w_{ba}+w)t'}dt' \right}\)</p>
+<p>\(c_b^1 (t)=-\frac{e}{m}\int_{-\infty}^{+\infty} dw A_0 (w) \left[ e^{i \delta_w}\bra{\Psi_b} e^{i\vce{k}\cdot\vec{r}} \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \int_0^t e^{i(w_{ba}-w)t'}dt'+e^{-i\delta_w} \bra{\Psi_b} e^{-i\vce{k}\cdot\vec{r}} \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \int_0^t e^{i(w_{ba}+w)t'}dt' \right]\)</p>
     <p>\(\int_0^t e^{i(w_{ba}-w)t'} =\frac{e^{i(w_{ba}-w)t}-1}{i(w_{ba}-w)}\) con \(w \sim -w_{ba}\) processo di assorbimento</p>
     <p>\(\int_0^t e^{i(w_{ba}+w)t'} =\frac{e^{i(w_{ba}-w)t}-1}{i(w_{ba}+w)}\) con \(w \sim -w_{ba}\) processo di emissione</p>
     <p> entrambi i processi sono di natura <strong>stimolata</strong>, quindi non è spontaneo</p>
 <p>\(T_{ab}=\frac{2\pi}{w_{ba}}\sim10^{-15} sec \ll t  \text{tempo tipico dell'esposizione all'onda EM}\)</p>
     <p>\(c_b^1 (t) =-\frac{e}{m} \int_{-\infty}^{+\infty} dw A_0 (w) e^{i \delta_w} M_{ba} \frac{e^{i(w_{ba}-w)t}-1}{i(w_{ba}-w)} \sim -\frac{e}{m}A-0 (w_{ba} M_{ba} \int_{-\infty}^{+\infty} dw e^{i \delta_w} \frac{e^{i(\overbrace{w_{ba}}^{\overline{w}}-w)t}-1}{i(w_{ba}-w)} \)</p>
 <p>\(\frac{e^{i \overline{w} t}-1}{i \overline{w}} \cdot \frac{e^{-i \overline{w} t}-1}{-i \overline{w}}=\frac{1- 2\cos{\overline{w}t}}{\overline{w}^2}=2 \boxed{\frac{2 \sin^2{\frac{\overline{w}t}{2}}}{\overline{w}^2}}=2 F(t, \overline{w})\)</p>
-<p>\(\lim_{\overline{w} \rightarrow 0} F(\ovelrine{w},t)=2 \frac{\left( \frac{\overline{w} t}{2}\right)^2}{\overline{w}^2}=\frac{t^2}{2}\)</p>
+<p>\(\lim_{\overline{w} \rightarrow 0} F(\overline{w},t)=2 \frac{\left( \frac{\overline{w} t}{2}\right)^2}{\overline{w}^2}=\frac{t^2}{2}\)</p>
 <p>\(\left|c^1_b (t) \right|^2=2\frac{e^2}{m^2}A^2_0 (w_{ba}) \left| M_{ba} (w_{ba})\right|^2 \int_{-\infty}^{+\infty} dw F (t, w_{ba}-w)=2\pi  \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) \left| M_{ba} (w_{ba})\right|^2 t\)</p>
-    <p> rate di transizione\(W_{ba}?{assorbimento}=\frac{d}{dt} |c^1_b|^2=2\pi \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) |M_{ab} (w_{ab})|^2\)</p>
+    <p> rate di transizione\(W_{ba}^{assorbimento}=\frac{d}{dt} |c^1_b|^2=2\pi \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) |M_{ab} (w_{ab})|^2\)</p>
 <p>\(W^{emissione}= W^{assorbimento}\) bilancio dettagliato (detailed balanced)</p>
-<p>\(M_{ba] (w)=\bra{\Psi_b e^{-i \vec{k} \cdot \vec{r}} } \vec{\varepsilon} \cdot \nabla \ket{\Psi_a}\) \sim \cdots</p>
-    <p>approsimazione di dipolo \( e^{-i \vec{k} \cdot \vec{r}}=1-i \vec{k} \cdot \vec{r}+\cdots\) \sim 1</p>
-    <p>\(| \vec{r} | \sim \overset{o}{\text{A}}</p>
-    <p>\(|\vec{k}| \sim\frac{2 \pi}{\lamda} \)</p>
+<p>\(M_{ba} (w)=\bra{\Psi_b e^{-i \vec{k} \cdot \vec{r}} } \vec{\varepsilon} \cdot \nabla \ket{\Psi_a} \sim \cdots \)</p>
+    <p>approsimazione di dipolo \( e^{-i \vec{k} \cdot \vec{r}}=1-i \vec{k} \cdot \vec{r}+\cdots \sim 1  \)</p>
+    <p>\( | \vec{r} | \sim \overset{o}{\text{A}}  \)</p>
+    <p>\(|\vec{k}| \sim\frac{2 \pi}{\lambda} \)</p>
     <p>\(|i \vec{k} \cdot \vec{r}|\sim 1\)</p>
     <p>\(\cdots \sim  \vec{\varepsilon}  \bra{\Psi_b} \nabla \ket{\Psi_a} =\frac{i}{\hbar} \vec{\varepsilon}  \bra{\Psi_a} \hat{\vec{p}} \ket {\Psi_a}= \cdots\)</p>
     <p>\(\hat{\vec{p}}= \frac{m}{i \hbar}\left[ \hat{r}, \hat{H_0} \right] =\frac{m}{i \hbar} [\hat{r}, \frac{\hat{p}^2}{2m}+V(\vec{r})]=\frac{m}{i\hbar}[\vec{r},\frac{\hat{p}^2}{2m}]\)</p>
-    <p>\(\frac{m}{i \hbar}[\vec{r},-\frac{\hbar^2}{2m}\nabla^2]f(\vce{r})=\frac{m}{i \hbar}\left( -\frac{\hbar^2}{2m}\right) \left{ r \nabla^2 f-\nabla^2 rf\right}=-\frac{\hbar}{i2}\left{ r \nabla^2 f -2 \nabla f-r \nabla^2 f \right}= \hat{\vec{p}}f\)</p>
+    <p>\(\frac{m}{i \hbar}[\vec{r},-\frac{\hbar^2}{2m}\nabla^2]f(\vce{r})=\frac{m}{i \hbar}\left( -\frac{\hbar^2}{2m}\right) \left{ r \nabla^2 f-\nabla^2 rf\right}=-\frac{\hbar}{i2}\left[ r \nabla^2 f -2 \nabla f-r \nabla^2 f \right]= \hat{\vec{p}}f\)</p>
 <p>\(\cdots = \frac{m}{\hbar^2}\vec{\varepsilon} \bra{\Psi_b}[\hat{r},\hat{H_0}]\ket{\Psi_a}= \frac{m}{\hbar^2}\vec{\varepsilon} \bra{\Psi_b}\hat{r}\hat{H_0}-\hat{H_0}\hat{r}\ket{\Psi_a}=\frac{m}{\hbar^2}\vec{\varepsilon}(E_a-E_b) \bra{\Psi_b} \hat{\vec{r}} \ket{\Psi_a}=-\frac{m}{\hbar}w_{ba} \vec{\varepsilon} \hat{\vec{r_{ba}}}\)</p>
     <p>\(W_{ba}=2 \pi \left(\frac{e}{m}\right)^2 A_0^2 (w_{ba}) |M_{ba}|^2 \propto |\vec{\varepsilon} \cdot \hat{\vec{D}}|^2\)</p>
-    <p>\(\langle |\vec{\varepsilon} \cdot \vec{D}|^" \rangle = \langle \cos^2 \theta \langle_}{} \vec}{D}|\)
+    <p>\(\langle |\vec{\varepsilon} \cdot \vec{D}|^2 \rangle = \langle \cos^2 \theta \langle \vec{D}|\)
     </p>
     <p>\(\vec{\varepsilon} \cdot \vec{D} = D \cos \theta\)</p>
     <p>\(W_{ba} \propto \frac{1}{3} |\vec{D}|^2\)</p>
     <p>\(\int_{-\infty}^{+\infty} \int_=^{2\pi} \int_0^{\pi} \Psi_b^* (r, tehta, \phi) \vec{r} \Psi_a (r, \theta, \phi) \underbrace{\sin \theta d \theta d \phi dr}_{d^3 \vec{r}}\)</p>
-<p>\(P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \theta} \begin{pmatrix} x \\y \\z \end{pmatrix}=\begin{pmatrix} r \sin \theta \cos \phi \\ r \sin \theta r \sin \phi \\ r \cos \theta\) P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \phi}</p>
+<p>\(P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \theta} \begin{pmatrix} x \\y \\z \end{pmatrix}=\begin{pmatrix} r \sin \theta \cos \phi \\ r \sin \theta r \sin \phi \\ r \cos \theta \end{pmatrix}  P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \phi} \)</p>
 
-
-
-
+    <hr>
+    <p>\(\Delta l= \pm \ qquad \Delta m_l =0,\pm 1 \qquad \Delta m_s=0\)</p>
+    <p>\(\Delta L=0,\pm 1 \qquad \Delta m_L=0, \pm 1 \qquad \Delta s=0  \)</p>
+    <p>\(^{2s+1}L\)</p>
+    <p>questa transizione è proibita \( {L_m}_i=0 \rightarrow  {L_m}_f=0 \) </p>
+   <p>\ energia delle transizioni elettroniche (E_e \sim  \frac{p^2}{2m} \sim  \frac{\hbar^2}{2ma^2}  \sim  1eV \qquad pe \sim \hbar\)</p>
+<p>\(E_{vibrazionali} \sim \left(  \frac{m_e}{M} \right)^2 E_e \sim 10^{-2} eV\)</p>
+    <p>\(w_e =\left( \frac{k}{m_e} \right)^{ \frac{1}{2}}\)</p>
+    <p>\(w_v =\left( \frac{k}{M} \right)^{ \frac{1}{2}}\)</p>
+    <p>\(E_{rotazionale}= \frac{L^2}{"I}= \frac{\hbar^2 l(l+1)}{Ma^2} \sim  \frac{\hbar^2}{Ma^2} = \frac{m_e}{M}E_e \sim 10^{-4} eV </p>
+<p>\begin{matrix}  \underline{E_{e_1}} \\ \underline{E_{e_0}} \en{matrix} entrambi i livelli (che hanno una distanza di \(\Delta E_e) \)si separando in tre livelli che hanno una separazione di distanza \( \Delta E_v\) e a loro volta si splittano  con una distanza di ordine \( \Delta E_t \)</p>
+<h3>Che cosa è un legame chimico?</h3>
+    <p>Potenziale di Morse</p>
+    <p>\(E_p (R)=E_{diss} \left( 1-e^{-\xi (R-R_0)} \right)^2\)</p>
+    <p>\(\ce{Na+}\ce{Cl-}\)</p>
+    <p>\(E_p (R) =- \frac{1}{R}+ \frac{\xi}{R^q}\)</p>
+<p>\(H_{tot}=-\sum_{i=1}^N  \frac{\hbar^2}{2M_i} \nabla_{R_i}^2-\sum_{i=1}^n  \frac{\hbar^2}{2m} \nabla_{r_i}^2-\sum_{i=1}^N \sum_{j=1}^n  \frac{Z_i e^2}{|\vec{R_i}-\vec{r_j}|}+ \frac{1}{2}\sum_{i \neq j}^N \frac{Z_i Z_j e^2}{|\vec{R_i}-\vec{r_j}|}= \hat{T_{r_i}}+\hat{T_r}+V_{eN} (r,R)+V_{ee} (r)+V_{NN} (R)\)</p>
+    <p>\(H_{tot } \underbrace{\Psi (R,r)}_{\Psi_R (r) \Phi (R)} =E_{tot} \Psi (R,r) \)</p>
+    <p> se i nuclei sono fissi, il problema diventa questo\( \left[ T_r+ V_{eN} (r,R)+V_{ee} (r) +V_{NN} (R) \right] \Psi_R (r) =E_R \Psi_R (r)\)</p>
+<p>\(H_{tot} \left[ \Psi_R (r) \Phi (R) \right] =T_R \left[ \Psi_R (r) \Phi (R)\right]+\Phi (R)\underbrace{ \left[ T_r +V_{eN} (r,R) +V_{ee} (r) +V_{NN} (R) \right]}_{E_R \Psi_R (r)} \Psi_R (r) =E_{tot} \Psi_R (r) \Phi (R)\)</p>
+<p>\(-\frac{\hbar^2}{2M_i}\nabla_{R_i}^2 \left[ \Psi_R (r) \Phi (R) \right]=-\frac{\hbar^2}{2M_i} \left[ \frac{\partial^2}{\partial R_i^2}\Phi (R) \right] \Psi_R (r)-\frac{\hbar^2}{2M_i} \underbrace{\left[ \left( \frac{\partial^2}{\partial R_i^2} \Phi_R (r) \right) \Phi (R)+2  \left( \frac{\partial}{\partial R_i} \Psi_R (r) \frac{\partial}{\partial R_i} \Phi (R) \right) \left]}_{\text{può essere trascurato grazie all'aprox di Bohr-Oppenheimer}} \)</p>
+    <p>\([T_R \Phi (R) ] \Psi_R (r) +E_R \Phi (R) \Phi (R) \Psi_R (r) =E_{tot} \Psi_R (r) \Phi (R)\)</p>
+    <p>\(\boxed{T_R \Phi (R) +E_R \Phi (R) =E_{tot} \Phi (R)}\)</p>
 
     
 </body>  
