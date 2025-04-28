@@ -61,21 +61,21 @@
     <p class="hover-effect"   onmouseover="this.textContent='...............'"  onmouseout="this.textContent='____________'">_________________</p> 
     <p>\(\hat{H}=\frac{\hat{\vec{p}}^2}{2 \mu}+\hat{V}(\hat{\vec{x}})  \hat{H}\ket{\Psi}=\ket{\Psi}\)\)</p>
     <p>\(\braket{\vec{x}}{\Psi}=\Psi (\vec{x})\)</p>
-    <p>\({-\frac{\hbar^2}{2\mu}\frac{1}{r}\frac{\partial^2}{\partial r^2} r-\frac{\hbar^2}{2\mu r^2}\left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\theta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \phi^2}\right]+V(r)}\Psi(r,\theta,\phi)=E\Psi(r,\theta,\phi)\)</p>
+    <p>\({-\frac{\hbar^2}{2\mu}\frac{1}{r}\frac{\partial^2}{\partial r^2} r-\frac{\hbar^2}{2\mu r^2}\left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\theta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \varphi^2}\right]+V(r)}\Psi(r,\theta,\varphi)=E\Psi(r,\theta,\varphi)\)</p>
     <p>\(\hat{H}=\frac{\hat{p_r}^2}{2\mu}+\frac{\hat{L}^2}{2\mu r^2}+\hat{V}(r)=\frac{\hat{p_r}^2}{2\mu}+\hat{V_{eff}}(r)\)</p>
-    <p>\(\Psi(r,\theta,\phi)=\braket{\vec{x}}{\Psi}=R(r)Y(\theta,\phi)\)</p>
-    <p>\(\hbar^2 \left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\theta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \phi^2}\right]=\hat{L}^2\)</p>
+    <p>\(\Psi(r,\theta,\varphi)=\braket{\vec{x}}{\Psi}=R(r)Y(\theta,\varphi)\)</p>
+    <p>\(\hbar^2 \left[ \frac{1}{\sin{\theta}}\frac{\partial}{\partial \theta} (\sin{\theta}\frac{\partial}{\partial \theta})+\frac{1}{\sin{\theta}^2}\frac{\partial^2}{\partial \varphi^2}\right]=\hat{L}^2\)</p>
     <p>\(\hat{L}^2\ket{l,m_l}=\hbar^2 l (l+1)\ket{l,m_L}\)</p>
-    <p>\(\hat{L_z}=-i\hbar\frac{\partial}{\partial \phi }\)</p>
-    <p>\(\hat{L_z}=\ket{l,m_l}=\hbar m_l\ket{l,m_l} \braket{\theta,\phi}{l,m_l}=Y_l^{m_l} (\theta,\phi)\)</p>
-    <p>\(-\hbar^2\left[ \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} (\sin \theta \frac{\partial}{\partial \theta} )+\frac{1}{\sin^2 \theta} \frac{\partial^2}{\partial \phi^2}\right] Y_l^{m_l} (\theta,\phi) =\hbar^2 l(l+1) Y_l^{m_l} (\theta,\phi)-i\hbar \frac{\partial}{\partial \phi} Y_l^{m_l} (\theta,\phi)=\hbar m_l Y_l^{m_l} (\theta,\phi)\)</p>
-<p>\(Y_l^{m_l} (\theta,\phi)=\sqrt{\frac{(2l+1)(l-m_l)!}{4\pi(l+m_l)!}}P_l^{m_l}(\cos \theta)e^{i m_l \phi}\)</p>
+    <p>\(\hat{L_z}=-i\hbar\frac{\partial}{\partial \varphi }\)</p>
+    <p>\(\hat{L_z}=\ket{l,m_l}=\hbar m_l\ket{l,m_l} \braket{\theta,\varphi}{l,m_l}=Y_l^{m_l} (\theta,\varphi)\)</p>
+    <p>\(-\hbar^2\left[ \frac{1}{\sin \theta} \frac{\partial}{\partial \theta} (\sin \theta \frac{\partial}{\partial \theta} )+\frac{1}{\sin^2 \theta} \frac{\partial^2}{\partial \varphi^2}\right] Y_l^{m_l} (\theta,\varphi) =\hbar^2 l(l+1) Y_l^{m_l} (\theta,\varphi)-i\hbar \frac{\partial}{\partial \varphi} Y_l^{m_l} (\theta,\varphi)=\hbar m_l Y_l^{m_l} (\theta,\varphi)\)</p>
+<p>\(Y_l^{m_l} (\theta,\varphi)=\sqrt{\frac{(2l+1)(l-m_l)!}{4\pi(l+m_l)!}}P_l^{m_l}(\cos \theta)e^{i m_l \varphi}\)</p>
     <p>il \(4 \pi\) ricorda l'angolo solido</p>
-    <p>se prendiamo due armoniche sferiche: \(\int_0^{\pi}\int_{-\pi}^{\pi}\sin \theta d\theta d\phi Y_l^{m_l} (\theta,\phi)\)\(Y_{l'}^{m_l'} (\theta,\phi) =\int_0^{\pi}\int_{-\pi}^{\pi} d\Omega Y_l^{m_l} (\theta,\phi)Y_{l'}^{m_l'} (\theta,\phi)=\delta_{l,l'}\delta_{m_l,m_l'}\)</p>
-<p>\(Y_0^0 (\theta,\phi)=\frac{1}{\sqrt{4\pi}}\)</p>
-<p>\(Y_1^0 (\theta,\phi)=1/2 \sqrt{\frac{3}{\pi}} \cos \theta\)</p>
-<p>\(Y_1^1 (\theta,\phi)=1/2 \sqrt{\frac{3}{\pi}} e^{\pm i \phi}\)</p>
-    <p>\(\Psi (r, \theta,\phi)=R(r)Y_l^{m_l} (\theta,\phi) \)</p
+    <p>se prendiamo due armoniche sferiche: \(\int_0^{\pi}\int_{-\pi}^{\pi}\sin \theta d\theta d\varphi Y_l^{m_l} (\theta,\varphi)\)\(Y_{l'}^{m_l'} (\theta,\varphi) =\int_0^{\pi}\int_{-\pi}^{\pi} d\Omega Y_l^{m_l} (\theta,\varphi)Y_{l'}^{m_l'} (\theta,\varphi)=\delta_{l,l'}\delta_{m_l,m_l'}\)</p>
+<p>\(Y_0^0 (\theta,\varphi)=\frac{1}{\sqrt{4\pi}}\)</p>
+<p>\(Y_1^0 (\theta,\varphi)=1/2 \sqrt{\frac{3}{\pi}} \cos \theta\)</p>
+<p>\(Y_1^1 (\theta,\varphi)=1/2 \sqrt{\frac{3}{\pi}} e^{\pm i \varphi}\)</p>
+    <p>\(\Psi (r, \theta,\varphi)=R(r)Y_l^{m_l} (\theta,\varphi) \)</p
     <p>\(\left[- \frac{\hbar^2}{2\mu r}\frac{d^2}{dr^2}r +\underbrace{\frac{\hbar^2 l (l+1)}{2 \mu r^2} -\frac{Ze^2}{4 \pi \varepsilon_0 r}  }_{V_{eff}^l(r)}  \right] R(r)=E\cdot R(r)\)</p>
     <p>\(R_{n,l}(r)=\frac{U(r)}{r}\), \(U_{n.l}\) con \(n=1,2,3\) e \(l \le n-1\)</p>
     <p>\(\left[-\frac{\hbar^2}{2\mu}\frac{d^2}{dr^2}+V_{eff}^l (r)\right]U(r)=E U(r)\)</p>
@@ -87,14 +87,14 @@
     <img src="materiaimg2.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
 <p>\(V_{eff} (r)=\frac{\hbar^2 l (l+1)}{2 \mu r^2}-\frac{Ze^2}{4\pi \varepsilon_0 r}\)</p>
     <p>\(R_{n,l} (r)=\frac{U_{n,l} (r)}{r}\)</p>
-    <p>\(\int_0^{+\infty}  r^2 \left| R_{n,l} (r)\right|^2dr=1=\int_0^{+\infty} dr \left| U_{n,l} (r)\right|^2\)   \(d^3 r=r^2 \sin \theta d\theta d\phi dr \)</p>
+    <p>\(\int_0^{+\infty}  r^2 \left| R_{n,l} (r)\right|^2dr=1=\int_0^{+\infty} dr \left| U_{n,l} (r)\right|^2\)   \(d^3 r=r^2 \sin \theta d\theta d\varphi dr \)</p>
     <p>\(P_{n,l}=r^2\left|R_{n,l} (r)\right|^2 \left[r,r+dr\right]\)</p>
 <img src="materiaimg3.png" alt="Spero che vi piace" style="width: 50%; height: auto;">    <p>\(\Psi_{m,l,m_l}=R_{n,l} Y_l^{m_l}\)</p>
  <p>\(\langle r^{\alpha} \rangle_{n,l}=\int_0^{\infty} r^{\alpha} P_{n,l} (r) dr\)</p>
 <p>Somiglianze tra il modello di Bohr e quello di Schroedinger: sia l'energia sia la probabilità abbia una certa distanza è la stessa </p>
     <img src="materiaimg4.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
     <p>\(\bar{r}=\langle r\rangle_{1,0} \leq r_{max}=\frac{3}{2} a_0\)</p>
-    <p>\(Y_{n,l,m_l} (r,\theta ,\phi)=\braket{\vec{x}}{\Psi}R_{n,l} (r) Y_l^{m_l} (\theta ,\phi)\)</p>
+    <p>\(Y_{n,l,m_l} (r,\theta ,\varphi)=\braket{\vec{x}}{\Psi}R_{n,l} (r) Y_l^{m_l} (\theta ,\varphi)\)</p>
     <p>\(n=1,2,3,4....\); \(l \le n-1\); \(m_l=\underbrace{-l,-l+1,...,0,...l-1,l}_{2l+1}\)</p>
     <p>\(E_n \sim \frac{1}{n^2}\)</p>
     <p>\(deg(n)=\sum_{l=0}^{n-1}(2l+1)=2\sum_{l=0}^{n-1} l +n=2 \frac{n(n-1)}{2}+n=n^2\)</p>
@@ -153,8 +153,8 @@
     <p>bisogna inserire una precessione di Thomas \(\color{rgb(0,217,98)}\frac{1}{2}\)</p><p>problema dei sistemi di riferimenti acceleratio</p>
 <p>\(\hat{H_{s_o}}=\frac{g_s \mu_B}{2 e mc^2 \hbar }\frac{d V(\hat{r})}{r}\frac{\hat{\vec{S}}\cdot\hat{\vec{L}}}{\hat{r}}\)</p>
 <hr>
-    <p>\(\mathscr{J}_l^m (\theta, \phi) = \begin{cases} \sqrt{\frac{l+m_j+1/2}{2l+1}}Y_l^{m_l} \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sqrt{\frac{l-m_j+1/2}{2l+1}}+Y_l^{m_j+1/2} \begin{pmatrix}0\\1\end{pmatrix}  con j=l+1/2 && \sqrt{\frac{l-m_j+1/2}{2l+1}}Y_l^{m_l} \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sqrt{\frac{l+m_j+1/2}{2l+1}}+Y_l^{m_j+1/2} \begin{pmatrix}0\\1\end{pmatrix}  con j=l-1/2\end{cases}\)</p>
-    <p>\(D=e^{-\frac{\hat{\vec{S}}\cdot \vec{n}g}{\hbar}}\)  \(\hat{n}=\hat{n} (\theta, \phi)\)questo è il generatore delle traslazioni spaziali</p>
+    <p>\(\mathscr{J}_l^m (\theta, \varphi) = \begin{cases} \sqrt{\frac{l+m_j+1/2}{2l+1}}Y_l^{m_l} \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sqrt{\frac{l-m_j+1/2}{2l+1}}+Y_l^{m_j+1/2} \begin{pmatrix}0\\1\end{pmatrix}  con j=l+1/2 && \sqrt{\frac{l-m_j+1/2}{2l+1}}Y_l^{m_l} \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sqrt{\frac{l+m_j+1/2}{2l+1}}+Y_l^{m_j+1/2} \begin{pmatrix}0\\1\end{pmatrix}  con j=l-1/2\end{cases}\)</p>
+    <p>\(D=e^{-\frac{\hat{\vec{S}}\cdot \vec{n}g}{\hbar}}\)  \(\hat{n}=\hat{n} (\theta, \varphi)\)questo è il generatore delle traslazioni spaziali</p>
     <p>\(D (\sigma_z) D (\sigma_y)  \begin{pmatrix} 1 \\ 0 \end{pmatrix}=\cos{\theta /2} e^{-i \Phi/2}  \begin{pmatrix} 1 \\ 0 \end{pmatrix}+\sin{\theta/2}e^{-i \Phi/2} \begin{pmatrix} 0 \\ 1 \end{pmatrix}\)</p>
 <h6>Notazione spettroscopica</h6>
     <p>\(\begin{cases} l=0 \rightarrow s& l=1 \rightarrow p  l=2 \rightarrow d \text{(elementi di transizioni)}  l=3 \rightarrow f \text{(sia spinorbita sia interazione coulombiana)} \end{cases}\)</p>
@@ -195,7 +195,7 @@
             <p>\(\hat{\vec{J}}_z \ket{l,s,j,m_j}\rightarrow \hbar m_j \sqrt{l(l+1)}\ket{l,s,j,m_j}\)</p>
     <p>in generale \(m_j=m_l+m_s\) per un elettrone invece \(m_j=m_l+1/2\) dato che \(|l-s| \le j \le |l+s|\)</p>
     <p>\(\ket{l,s,j,m_j}=\sum_{m_l,m_s} \ket{l,s,m_l,m_s} \underbrace{\bra{l,s,m_l,m_s}\ket{l,s,j,m_j}}_{\text{coeff. di Clebsh-Gordan}}\)</p>
-    <p>\(\bra{\theta , \phi}\ket{l,s,j,m_j}=\mathscr{Y}_j^{m_j} (\theta , \phi)=\sum_{m_l=-l}^{+l} \sum_{m_s=-s}^{+s} Y_l^{m_l} (\theta , \phi) \chi_{s,m_s} \mathscr{C}\)</p>
+    <p>\(\bra{\theta , \varphi}\ket{l,s,j,m_j}=\mathscr{Y}_j^{m_j} (\theta , \varphi)=\sum_{m_l=-l}^{+l} \sum_{m_s=-s}^{+s} Y_l^{m_l} (\theta , \varphi) \chi_{s,m_s} \mathscr{C}\)</p>
     <p>\(\alpha \begin{pmatrix}1\\0\end{pmatrix}+\beta\begin{pmatrix}0\\1\end{pmatrix}\)</p>
     <p> \(\chi_{s=1/2, ms=+1/2}=\begin{pmatrix}1\\0\end{pmatrix}=\ket{s=1/2,m_s=1/2}\)</p>
         <p> \(\chi_{s=1/2, ms=-1/2}=\begin{pmatrix}0\\1\end{pmatrix}=\ket{s=1/2,m_s=-1/2}\)</p>
@@ -270,7 +270,7 @@
     <p>\(\bra{\Phi}\hat{H}\ket{\Psi}=\sum_n \sum_m =c_n^*\bra{\Phi_n}\hat{H}\ket{\Psi_m}c_m=\sum_n \sum_m c_n^* c_m E_m \delta_{n,m} =\sum_n |c_n|^2 E_n \ge E_0 \sum_n |c_n|^2=E_0 \)</p>
     <p>\(E[\Phi]=\bra{\Psi_{Z_{eff}}}-\frac{1}{2}\nabla_{r_1}^2 -\frac{1}{2}\nabla_{r_2}^2 -\frac{Z}{r_1}-\frac{Z}{r_2}+\frac{1}{\left|r_1-r_2 \right|} \ket{\Psi_{Z_{eff}}} \)</p>
     <p>\(E[\Psi_{Z_{eff}}]=-Z^2 u.a.+\frac{5}{8} Z u.a.\)</p>
-    <p>\(\frac{\delta}{\delta Z_{eff}} E[\phi_{Z_{eff}}]=0\)</p
+    <p>\(\frac{\delta}{\delta Z_{eff}} E[\varphi_{Z_{eff}}]=0\)</p
    <hr>
     <p>\(\Phi_{Z_{eff}} (r_1,r_2)=\frac{Z^3e}{\pi}e^{-Ze(r_1+r_2)}\)</p>
     <p>\(Z_{eff}=Z-S \lt Z\)</p>
@@ -332,7 +332,7 @@
     <p>\(\hat{H_C} \ket{\Psi}=\sum_{i=1}^n \hat{H_i} \ket{\Psi} =\ket{\Psi} \sum_i E_i=E \ket{\Psi}\)</p>
     <p onclick="let a='abcdn';let l=Math.floor(Math.random()*a.length);this.textContent='\\(\\Psi = \\Psi_a  (\\vec{x_1}) \\Psi_b  (\\vec{x_2}) ... \\Psi_n  (\\vec{x_n})\\) con \\('+a[l]+'\\equiv (n_'+a[l]+',l_'+a[l]+',m_{l_'+a[l]+'})\\)'; MathJax.typeset(); ">\(\Psi = \Psi_a  (\vec{x_1}) \Psi_b  (\vec{x_2}) ... \Psi_n  (\vec{x_n})\) con \(i \equiv (n_i,l_i,m_{l_i})\)</p>
     <p>\(H_i \Psi_i=E_i \Psi_i\)</p>
-    <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=\underbrace{u_{n,l,m_l} (\vec{x})}_{R_{n,l} (r) Y_l^m (\theta, \phi)} \chi_{\frac{1}{2},m_s}\)</p>
+    <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=\underbrace{u_{n,l,m_l} (\vec{x})}_{R_{n,l} (r) Y_l^m (\theta, \varphi)} \chi_{\frac{1}{2},m_s}\)</p>
 <p>metodo di Hartree</p>
     <p>funzionale di Haartree \(\bra{\Psi} \sum_i -\frac{1}{2} \nabla_i^2 -\frac{Z}{x_i}+\sum_i \sum_j \frac{1}{x_{ij}}\ket{\Psi}\)</p>
     <p>\(\lambda \delta \bra{\Psi} \ket{\Psi}=0\)</p>
@@ -352,7 +352,7 @@
     <p>\(\Psi (\vec{x_1},\sigma_1,\vec{x_2},\sigma_2,...,\vec{x_n},\sigma_n)=\Psi_a (\vec{x_1})\Psi_a (\vec{x_1})\Psi_b (\vec{x_2})...\Psi_{\mu} (\vec{x_n})\)</p>
     <p>\(\Psi_{n,l,m_l,m_s} (\vec{x})=u_{n,l,m_l} (\vec{x}) \chi_{s=\frac{1}{2},m_s}\)</p>
     <p>\(u_i(\vec{x})=\sum_{j=1}^M c_j \Phi_j (\vec{x})\)</p>
-    <p>\(\Phi_{n,l,m_l} (\vec{x})=r^{n-1}e^{-\alpha r} Y_{l,m} (\theta ,\phi )\) funzioni di Slater</p>
+    <p>\(\Phi_{n,l,m_l} (\vec{x})=r^{n-1}e^{-\alpha r} Y_{l,m} (\theta ,\varphi )\) funzioni di Slater</p>
 <p>\(H_{nm} \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}=E \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix}\)</p>
     <img src="materiaimg10.png" alt="Spero che vi piace" style="width: 50%; height: auto;">
     <h5>Determinante di Slater</h5>
@@ -546,7 +546,7 @@
      <hr>
 <p>dipolo oscillante: \(\vec{p}=-e \vec{x}\)</p>
     <p>rate di emissione \(\overline{R}=\frac{4 \pi^3 \mu^4}{3 \varepsilon_0 e^3}p\)</p>
-    <p>R=\frac{\overline{R}{h \mu}=\frac{4 \pi^3 \mu^3}{3 \varepsilon_0 h c^3}p</p>
+    <p>\(R=\frac{\overline{R}}{h \mu}=\frac{4 \pi^3 \mu^3}{3 \varepsilon_0 h c^3}p\)</p>
     <p>\( \ket{\Psi_1} \qquad \ket{\Psi_2}\)</p>
     <p>\(\Psi (\vec{x},t)=c_1 \Psi_1 (\vec{x})e^{-i\frac{E_1 t}{\hbar}}+c_2 \Psi_2 (\vec{x})e^{-i\frac{E_2 t}{\hbar}}\)</p>
  <p>\(\Psi^* \Psi= |c_1|^2 |\Psi_1 |^2+|c_2|^2 |\Psi_2 |^2  +c_2^* c_1 \Psi_2^* \Psi_1^*e^{-i\frac{(E_1-E_2)t}{\hbar}}+c_1^* c_2 \Psi_2^* \Psi_1^*e^{-i\frac{(E_1-E_2)t}{\hbar}}\)</p>
@@ -609,20 +609,21 @@
     </p>
     <p>\(\vec{\varepsilon} \cdot \vec{D} = D \cos \theta\)</p>
     <p>\(W_{ba} \propto \frac{1}{3} |\vec{D}|^2\)</p>
-    <p>\(\int_{-\infty}^{+\infty} \int_=^{2\pi} \int_0^{\pi} \Psi_b^* (r, tehta, \phi) \vec{r} \Psi_a (r, \theta, \phi) \underbrace{\sin \theta d \theta d \phi dr}_{d^3 \vec{r}}\)</p>
-<p>\(P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \theta} \begin{pmatrix} x \\y \\z \end{pmatrix}=\begin{pmatrix} r \sin \theta \cos \phi \\ r \sin \theta r \sin \phi \\ r \cos \theta \end{pmatrix}  P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \phi} \)</p>
+    <p>\(\int_{-\infty}^{+\infty} \int_=^{2\pi} \int_0^{\pi} \Psi_b^* (r, tehta, \varphi) \vec{r} \Psi_a (r, \theta, \varphi) \underbrace{\sin \theta d \theta d \varphi dr}_{d^3 \vec{r}}\)</p>
+<p>\(P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \theta} \begin{pmatrix} x \\y \\z \end{pmatrix}=\begin{pmatrix} r \sin \theta \cos \varphi \\ r \sin \theta r \sin \varphi \\ r \cos \theta \end{pmatrix}  P_{l_a}^{M_{l_a}} (\cos \theta) e^{-i m_{l_a} \varphi} \)</p>
 
     <hr>
-    <p>\(\Delta l= \pm \ qquad \Delta m_l =0,\pm 1 \qquad \Delta m_s=0\)</p>
+    <p>\(\Delta l= \pm \qquad \Delta m_l =0,\pm 1 \qquad \Delta m_s=0\)</p>
     <p>\(\Delta L=0,\pm 1 \qquad \Delta m_L=0, \pm 1 \qquad \Delta s=0  \)</p>
     <p>\(^{2s+1}L\)</p>
     <p>questa transizione è proibita \( {L_m}_i=0 \rightarrow  {L_m}_f=0 \) </p>
-   <p>\ energia delle transizioni elettroniche (E_e \sim  \frac{p^2}{2m} \sim  \frac{\hbar^2}{2ma^2}  \sim  1eV \qquad pe \sim \hbar\)</p>
+   <p> energia delle transizioni elettroniche \(E_e \sim  \frac{p^2}{2m} \sim  \frac{\hbar^2}{2ma^2}  \sim  1eV \qquad pe \sim \hbar\)</p>
 <p>\(E_{vibrazionali} \sim \left(  \frac{m_e}{M} \right)^2 E_e \sim 10^{-2} eV\)</p>
     <p>\(w_e =\left( \frac{k}{m_e} \right)^{ \frac{1}{2}}\)</p>
     <p>\(w_v =\left( \frac{k}{M} \right)^{ \frac{1}{2}}\)</p>
-    <p>\(E_{rotazionale}= \frac{L^2}{"I}= \frac{\hbar^2 l(l+1)}{Ma^2} \sim  \frac{\hbar^2}{Ma^2} = \frac{m_e}{M}E_e \sim 10^{-4} eV </p>
-<p>\begin{matrix}  \underline{E_{e_1}} \\ \underline{E_{e_0}} \en{matrix} entrambi i livelli (che hanno una distanza di \(\Delta E_e) \)si separando in tre livelli che hanno una separazione di distanza \( \Delta E_v\) e a loro volta si splittano  con una distanza di ordine \( \Delta E_t \)</p>
+    
+    <p>\(E_{rotazionale}= \frac{L^2}{"I}= \frac{\hbar^2 l(l+1)}{Ma^2} \sim  \frac{\hbar^2}{Ma^2} = \frac{m_e}{M}E_e \sim 10^{-4} eV \)</p>
+<p>\(\begin{matrix}  \underline{E_{e_1}} \\ \underline{E_{e_0}} \end{matrix}\) entrambi i livelli (che hanno una distanza di \(\Delta E_e) \)si separando in tre livelli che hanno una separazione di distanza \( \Delta E_v\) e a loro volta si splittano  con una distanza di ordine \( \Delta E_t \)</p>
 <h3>Che cosa è un legame chimico?</h3>
     <p>Potenziale di Morse</p>
     <p>\(E_p (R)=E_{diss} \left( 1-e^{-\xi (R-R_0)} \right)^2\)</p>
@@ -632,10 +633,43 @@
     <p>\(H_{tot } \underbrace{\Psi (R,r)}_{\Psi_R (r) \Phi (R)} =E_{tot} \Psi (R,r) \)</p>
     <p> se i nuclei sono fissi, il problema diventa questo\( \left[ T_r+ V_{eN} (r,R)+V_{ee} (r) +V_{NN} (R) \right] \Psi_R (r) =E_R \Psi_R (r)\)</p>
 <p>\(H_{tot} \left[ \Psi_R (r) \Phi (R) \right] =T_R \left[ \Psi_R (r) \Phi (R)\right]+\Phi (R)\underbrace{ \left[ T_r +V_{eN} (r,R) +V_{ee} (r) +V_{NN} (R) \right]}_{E_R \Psi_R (r)} \Psi_R (r) =E_{tot} \Psi_R (r) \Phi (R)\)</p>
-<p>\(-\frac{\hbar^2}{2M_i}\nabla_{R_i}^2 \left[ \Psi_R (r) \Phi (R) \right]=-\frac{\hbar^2}{2M_i} \left[ \frac{\partial^2}{\partial R_i^2}\Phi (R) \right] \Psi_R (r)-\frac{\hbar^2}{2M_i} \underbrace{\left[ \left( \frac{\partial^2}{\partial R_i^2} \Phi_R (r) \right) \Phi (R)+2  \left( \frac{\partial}{\partial R_i} \Psi_R (r) \frac{\partial}{\partial R_i} \Phi (R) \right) \left]}_{\text{può essere trascurato grazie all'aprox di Bohr-Oppenheimer}} \)</p>
+<p>\(-\frac{\hbar^2}{2M_i}\nabla_{R_i}^2 \left[ \Psi_R (r) \Phi (R) \right]=-\frac{\hbar^2}{2M_i} \left[ \frac{\partial^2}{\partial R_i^2}\Phi (R) \right] \Psi_R (r)-\frac{\hbar^2}{2M_i} \underbrace{\left[ \left( \frac{\partial^2}{\partial R_i^2} \Phi_R (r) \right) \Phi (R)+2  \left( \frac{\partial}{\partial R_i} \Psi_R (r) \frac{\partial}{\partial R_i} \Phi (R) \right) \right]}_{\text{può essere trascurato grazie all'aprox di Bohr-Oppenheimer}} \)</p>
     <p>\([T_R \Phi (R) ] \Psi_R (r) +E_R \Phi (R) \Phi (R) \Psi_R (r) =E_{tot} \Psi_R (r) \Phi (R)\)</p>
     <p>\(\boxed{T_R \Phi (R) +E_R \Phi (R) =E_{tot} \Phi (R)}\)</p>
 
     
-</body>  
+    <hr>
+   <p>\(\Psi ( \vec{r}, \vec{R} ) = \Psi_e^{(\vec{R})} (\vec{r} )  \Psi_n ( \vec{R} ) \)</p>
+    <p>\(H_2^+\)</p>
+    <p>\(\left[ \overbrace{-\frac{\hbar^2}{2m} \nabla_r^2 -\frac{1}{4 \pi \varepsilon_0 }\frac{e^2}{r_{\alpha}}}^{H_{\alpha}}-\frac{1}{4 \pi \varepsilon_0 }\frac{e^2}{r_{\beta}}+-\frac{1}{4 \pi \varepsilon_0 }\frac{e^2}{\overbrace{R_{\alpha \beta}}}^{|\vec{R_{\alpha}}-\vec{R_{\beta}}|\equiv |\vec{R}|} \right] \Psi_e^{(\vec{R})} (\vec{r} )= E_e ( \vec{R} ) \Psi_e^{(\vec{R})} (\vec{r}) \)</p>
+    <p>\(\left[ -\frac{\hbar^2}{2M} (\nabla^2_{\alpha}+ \nabla^2_{\beta})  +E_e (\vec{R} ) \right] \Psi_n (\vec{R} ) =E_{TOT} \Psi_n (\vec{R} )\)</p>
+    <p>Metodo LCAO</p>
+    <p>\(\ket{\Psi} = \sum_i c_i ket{\varphi_i} \)</p>
+    <p>\(\bra{\varphi_i} \ket{\varphi_i} =1 \qquad  \underbrace{\bra{\varphi_i} \ket{\varphi_j}}_{S_{ij} (\text{integrale di overlap})} \neq 0 \)</p>
+    <p>\(E[\Psi} =\frac{\bra{\varphi} H \ket{\varphi}}{(\bra{\varphi} \ket{\varphi}}\)</p>
+    <p>\(E[\Psi]=\frac{\sum_{ij} c_i^* c_j \bra{\varphi_i} H \ket{\varphi_j}}{\sum_{ij} c_i^* c_j \bra{\varphi_i} \ket{\varphi_j}}\)</p>
+    <p>\(\sum_{ij} =c_i^* c_j \overbrace{\bra{ \varphi_i} H \ket{\varphi_j}}^{H_{ij}}-E \sum_{ij} c_i^*  c_k \overbrace{\bra{\varphi} \ket{\varphi_j}}^{S_{ij}}=0\)</p>
+    <p>\(\frac{\delta}{\delta c_i^*} \boxed{sum_j H_{ij} c_j -E S_{ij} c_j=0}\)</p>
+    <p>\(det |A- \lambda B|=0\)</p>
+<p>\(\varphi_1=\varphi_{1s} (r_{\alpha}) =\frac{1}{(a_0^3 \pi)^{1/2}e^{-\frac{\overbrace{r_{\alpha}}^{\vec{r}-\vec{R_{\alpha}}}}{a_0}}}\)</p>
+    <p>\(\varphi_2=\varphi_{1s} (r_{\beta}) =\frac{1}{(a_0^3 \pi)^{1/2}} e^{-\frac{r_{\beta}}{a_0}}\)</p>
+    <p>\(det \left[ \begin{matrix} H_{11}-E S_{11} & H_{12}-E S_{12} \\ H_{21}-E S_{21} & H_{22}-E S_{22} \right] =0\)</p>
+    <p>\(H_{11}= \bra{\varphi_1}H \ket{\varphi_1}=\bra{\varphi_1}H_{\alpha} \ket{\varphi_1}-\frac{e^2}{4 \pi \varepsilon_0} \bra{\varphi_1}\frac{1}{r_{\beta}} \ket{\varphi_1}+\frac{e^2}{4 \pi \varepsilon_o R} \underbrace{\bra{\varphi_1} \ket{\varphi_1}}_{S_{11}\equiv 1}=E_{1s}+\frac{e^2}{4 \pi \varepsilon_0 R}-J\)</p>
+    <p>\(H_{22}= \bra{\varphi_2}H \ket{\varphi_2}=\bra{\varphi_2}H_{\beta} \ket{\varphi_2}-\frac{e^2}{4 \pi \varepsilon_0} \bra{\varphi_2}\frac{1}{r_{\alpha}} \ket{\varphi_2}+\frac{e^2}{4 \pi \varepsilon_o R} \underbrace{\bra{\varphi_2} \ket{\varphi_2}}_{S_{22}\equiv 1}=E_{1s}+\frac{e^2}{4 \pi \varepsilon_0 R}-J\)</p>
+<p>\(J=\int \varphi_1^* R_{\alpha}\frac{e^2}{4 \pi \varepsilon_0 r_{\beta}} \varphi_{1s} (r_{\alpha} ) dr)\)</p>
+    <p>\(H_{12}=\bra{\varphi_1} H \ket{\varphi_2} = \bra{\varphi_1} \underbrace{H_{\beta} \ket{\varphi_2}}_{E_{1s} \underbrace{\bra{\varphi_1}\ket{\varphi_2}}_{S_{12}}  } +\frac{e^2}{4 \pi \varepsilon_0 R}  \underbrace{ \bra{\varphi_1} \ket{\varphi_2}}_{S_{12}(R)} - \underbrace{ \int \varphi_1 (r_{\alpha} ) \frac{e^2}{4 \pi \varepsilon_0 r_{\alpha}} \varphi_2 (r_{\beta}) dr}_{K} =\left(E_{1s}+\frac{e^2}{4 \pi \varepsilon_0 R}\right)S_{12} -K \)</p>
+<p>\(E_+ (R)=\frac{H_{11}+H_{12}}{1+S_{12}} \qquad \Psi_+ = \frac{\varphi_{1s} (r_{\alpha})+\varphi_{1s} (r_{\beta})}{\sqrt{2(1+S_{12})}}\)</p>
+<p>\(E_- (R)=\frac{H_{11}-H_{12}}{1-S_{12}} \qquad \Psi_- = \frac{\varphi_{1s} (r_{\alpha})-\varphi_{1s} (r_{\beta})}{\sqrt{2(1-S_{12})}}\)</p>
+    <p>per E+ otteniamo un grafico simile al potenziale di Lennard Jones nelle unità atomiche per la distazna (minimo=2) e scale di energie di \(E_{1s}\): queste sono soluzioni di legame (gerade)</p>
+    <p>per E- invece ha un andamento del tipo \( \sim \frac{a}{x} \) : queste sonosluzioni di non legame (ungerade) (avvicinando gli elettroni la probabilità che l'elettrone sia al centro è nulla e quindi il legame non si viene a formare)  </p>
+    <p>questa non è la soluzione esatta del problema, perchè ho preso una base che era comodo per me e quindi potrebbbe esistere un funzionale per minimizzare ulteriormente l'energia</p>
+    <p> ora passiamo dall'ione idrogeno all'idrogeno \(H_2\) con entrambi gli elettroni</p>
+    <p>i numeri indicano gli elettroni e le lettere greche gli ioni</p>
+<p>\(R_{\alpha \beta} \equiv R \qquad r_{12} \equiv r\)</p>
+    <p>\(H=\overbrace{ \left[-\frac{1}{2} \nabla_{r_1}^2 -\frac{1}{r_{\alpha_1}} \right] }^{H_{\alpha}}+\overbrace{ \left[-\frac{1}{2} \nabla_{r_2}^2 -\frac{1}{r_{\beta_2}} \right] }^{H_{\beta}}-\frac{1}{r_{\beta_1}}-\frac{1}{r_{\alpha_2}}+\frac{1}{R}\)</p>
+    <p>\(\Psi_g (\vec{r_1},\vec{r_2})=[\varphi_{\alpha} (r_1) \varphi_{\beta} (r_2) +\varphi_{\alpha} (r_2) \varphi_{\beta} (r_1) ] \xi_{0,0}\)</p>
+    <p>\(\Psi_u (\vec{r_1},\vec{r_2})=[\varphi_{\alpha} (r_1) \varphi_{\beta} (r_2) -\varphi_{\alpha} (r_2) \varphi_{\beta} (r_1) ] \begin{cases}  \xi_{1,1}  \\ \xi_{1,0}  \\ \xi_{1,-1} \end{cases}\)</p>
+    <p>\(E[\Psi_{g,u}]=\frac{\bra{\Psi_{g,u}}H \ket{\Psi_{g,u}}}{\bra{\Psi_{g,u}}\ket{\Psi_{g,u}}}\)</p>
+<p>notazione usata: \(u \equiv \text{ungerade}\) e  \(g \equiv \text{gerade}\)</p>
+    </body>  
 </html>
