@@ -646,14 +646,14 @@
     <p>Metodo LCAO</p>
     <p>\(\ket{\Psi} = \sum_i c_i ket{\varphi_i} \)</p>
     <p>\(\bra{\varphi_i} \ket{\varphi_i} =1 \qquad  \underbrace{\bra{\varphi_i} \ket{\varphi_j}}_{S_{ij} (\text{integrale di overlap})} \neq 0 \)</p>
-    <p>\(E[\Psi} =\frac{\bra{\varphi} H \ket{\varphi}}{(\bra{\varphi} \ket{\varphi}}\)</p>
+    <p>\(E[\Psi] =\frac{\bra{\varphi} H \ket{\varphi}}{\bra{\varphi} \ket{\varphi}}\)</p>
     <p>\(E[\Psi]=\frac{\sum_{ij} c_i^* c_j \bra{\varphi_i} H \ket{\varphi_j}}{\sum_{ij} c_i^* c_j \bra{\varphi_i} \ket{\varphi_j}}\)</p>
     <p>\(\sum_{ij} =c_i^* c_j \overbrace{\bra{ \varphi_i} H \ket{\varphi_j}}^{H_{ij}}-E \sum_{ij} c_i^*  c_k \overbrace{\bra{\varphi} \ket{\varphi_j}}^{S_{ij}}=0\)</p>
-    <p>\(\frac{\delta}{\delta c_i^*} \boxed{sum_j H_{ij} c_j -E S_{ij} c_j=0}\)</p>
+    <p>\(\frac{\delta}{\delta c_i^*} \boxed{\sum_j H_{ij} c_j -E S_{ij} c_j=0}\)</p>
     <p>\(det |A- \lambda B|=0\)</p>
 <p>\(\varphi_1=\varphi_{1s} (r_{\alpha}) =\frac{1}{(a_0^3 \pi)^{1/2}e^{-\frac{\overbrace{r_{\alpha}}^{\vec{r}-\vec{R_{\alpha}}}}{a_0}}}\)</p>
     <p>\(\varphi_2=\varphi_{1s} (r_{\beta}) =\frac{1}{(a_0^3 \pi)^{1/2}} e^{-\frac{r_{\beta}}{a_0}}\)</p>
-    <p>\(det \left[ \begin{matrix} H_{11}-E S_{11} & H_{12}-E S_{12} \\ H_{21}-E S_{21} & H_{22}-E S_{22} \right] =0\)</p>
+    <p>\(det \left[ \begin{matrix} H_{11}-E S_{11} & H_{12}-E S_{12} \\ H_{21}-E S_{21} & H_{22}-E S_{22}  \end{matrix} \right] =0\)</p>
     <p>\(H_{11}= \bra{\varphi_1}H \ket{\varphi_1}=\bra{\varphi_1}H_{\alpha} \ket{\varphi_1}-\frac{e^2}{4 \pi \varepsilon_0} \bra{\varphi_1}\frac{1}{r_{\beta}} \ket{\varphi_1}+\frac{e^2}{4 \pi \varepsilon_o R} \underbrace{\bra{\varphi_1} \ket{\varphi_1}}_{S_{11}\equiv 1}=E_{1s}+\frac{e^2}{4 \pi \varepsilon_0 R}-J\)</p>
     <p>\(H_{22}= \bra{\varphi_2}H \ket{\varphi_2}=\bra{\varphi_2}H_{\beta} \ket{\varphi_2}-\frac{e^2}{4 \pi \varepsilon_0} \bra{\varphi_2}\frac{1}{r_{\alpha}} \ket{\varphi_2}+\frac{e^2}{4 \pi \varepsilon_o R} \underbrace{\bra{\varphi_2} \ket{\varphi_2}}_{S_{22}\equiv 1}=E_{1s}+\frac{e^2}{4 \pi \varepsilon_0 R}-J\)</p>
 <p>\(J=\int \varphi_1^* R_{\alpha}\frac{e^2}{4 \pi \varepsilon_0 r_{\beta}} \varphi_{1s} (r_{\alpha} ) dr)\)</p>
@@ -667,9 +667,38 @@
     <p>i numeri indicano gli elettroni e le lettere greche gli ioni</p>
 <p>\(R_{\alpha \beta} \equiv R \qquad r_{12} \equiv r\)</p>
     <p>\(H=\overbrace{ \left[-\frac{1}{2} \nabla_{r_1}^2 -\frac{1}{r_{\alpha_1}} \right] }^{H_{\alpha}}+\overbrace{ \left[-\frac{1}{2} \nabla_{r_2}^2 -\frac{1}{r_{\beta_2}} \right] }^{H_{\beta}}-\frac{1}{r_{\beta_1}}-\frac{1}{r_{\alpha_2}}+\frac{1}{R}\)</p>
-    <p>\(\Psi_g (\vec{r_1},\vec{r_2})=[\varphi_{\alpha} (r_1) \varphi_{\beta} (r_2) +\varphi_{\alpha} (r_2) \varphi_{\beta} (r_1) ] \xi_{0,0}\)</p>
-    <p>\(\Psi_u (\vec{r_1},\vec{r_2})=[\varphi_{\alpha} (r_1) \varphi_{\beta} (r_2) -\varphi_{\alpha} (r_2) \varphi_{\beta} (r_1) ] \begin{cases}  \xi_{1,1}  \\ \xi_{1,0}  \\ \xi_{1,-1} \end{cases}\)</p>
+    <p>\(\Psi_g (\vec{r_1},\vec{r_2})=[\varphi_{\alpha} (r_1) \varphi_{\beta} (r_2) +\varphi_{\alpha} (r_2) \varphi_{\beta} (r_1) ] \chi_{0,0}\)</p>
+    <p>\(\Psi_u (\vec{r_1},\vec{r_2})=[\varphi_{\alpha} (r_1) \varphi_{\beta} (r_2) -\varphi_{\alpha} (r_2) \varphi_{\beta} (r_1) ] \begin{cases}  \chi_{1,1}  \\ \chi_{1,0}  \\ \chi_{1,-1} \end{cases}\)</p>
     <p>\(E[\Psi_{g,u}]=\frac{\bra{\Psi_{g,u}}H \ket{\Psi_{g,u}}}{\bra{\Psi_{g,u}}\ket{\Psi_{g,u}}}\)</p>
 <p>notazione usata: \(u \equiv \text{ungerade}\) e  \(g \equiv \text{gerade}\)</p>
+    <hr>
+    <p>\(\Psi ( \vec{r}, \vce{R} )= \Psi_n ( \vec{R} ) \Psi_e^{(\vec{R})} ( \vec{r} )\)</p>
+    <p>\(H_e ( \vec{R} ) \Psi_e^{(\vec{R})} ( \vec{r})=E(R) \Psi_e^{(\vec{R})} ( \vec{r} )\)</p>
+<p>\(\sum_{i=1}^N c_i \varphi_i ( \vec{r})\)</p>
+<p>superfici di Bohr-Oppenheimer</p>
+<p>  notazione (n rappresenta il nucleo) \(\hat{H_n} \Psi_n = \left[ -\frac{\hbar^2}{2m} \sum_{\alpha} \frac{1}{M_{\alpha}} \nabla_{\alpha}^2+E(\vec{R}) \right] \Psi_n (\vec{R}) =E_{TOT} \Psi_n (\vec{R})\)</p>
+    <p>\(\vec{R_S} =\frac{M_{\alpha} \vec{R_{\alpha}}+M_{\beta} \vec{R_{\beta}}}{M_{\alpha}+M_{\beta}} \qquad \vec{R}= \vec{R_{\alpha}}+\vec{R_{\beta}} \qquad \mu= \frac{M_{\alpha}M_{\beta}}{M_{\alpha}+M_{\beta}}\)</p>
+    <p>\(\left[ \underbrace{-\frac{\hbar^2}{2(M_{\alpha}+M_{\beta})} \nabla^2_{\vec{R_S}}}-\frac{\hbar^2}{2\mu} \nabla^2_{\vec{R}}+E( \vec{R}) \right] \Psi_n (\vec{R_S}, \vec{R}) =E_{TOT} \Psi_n (\vec{R_S},\vec{R})\)</p>
+    <p>\(\Psi_n (\vce{R_S}, \vec{R})=e^{-\vec{k} \cdot \vec{R_S}} \xi (\vec{R})\)</p>
+<p>\(E_{TOT} =\frac{\hbar^2 k^2}{2(M_{\alpha}+M_{\beta})}+ E_N\)</p>
+<p>\(\left[ -\frac{\hbar^2}{2\ mu} \nabla^2_R + E( |\vec{R}| ) \right] \xi ( \vec{R}) =E_N \xi (\vec{R})\)</p>
+<p>\([H_{\xi}, J^2] =0 \qquad  [H_{\xi}, J_z]=0\)</p>
+<p>\(\xi ( \vec{R} ) = \frac{u(R)}{R} Y_J^M ( \theta. \varphi) \)</p>             
+<p>\(\left[-\frac{\hbar^2}{2 \mu}\frac{\partial^2}{\partial R^2}+\frac{\hbar^2 J(J+1)}{2 \mu R^2}+\underbrace{E( | \vec{R}|)}_{V(R)} \right] u(R) =E_N u(R)\)</p>
+    <p>approssimazione armonica \(V(R)= V(R_{equilibrio})+\frac{\overbrace{k}^{\frac{d^2 V}{dR^2}\big|_{R_{equilibrio}}} }{2}(R-R_{equilibrio})^2\) </p>
+<p>\(\left[\frac{\hbar^2}{ 2 \mu}\frac{\partial^2}{\partial R^2}+\hbar^2 \frac{J(J+1)}{2 \theta}+V(R_{eq}) +\frac{k}{2} (R-R_{eq})^2 \right] u(R) =E_N u(R)\)</p>
+<p>\(E_N= V(R_{eq}) +\hbar w \left(\overbrace{\nu}^{\text{numero quantico delle vibrazioni}}+\frac{1}{2}\right)+\frac{\hbar^2 \overbrace{J}^{\text{numero quantico delle rotazione}}(J+1)}{2 \theta}  \)</p> 
+	<p>la separazione tra livelli di \(\nu\) (0,1) è dell'ordine di \( \hbar w \sim 10{-2} eV\)</p>             
+	<p>la separazione tra due seperazione di due J consecutivi (3,4) è dell'ordine di \( 10^{-3} - 10{-5} eV\)</p>             
+<p>energia rotazionale: </p>
+	<p>\(\frac{\hbar^2 J(J+1)}{2 \theta}=B hc J(J+1) \qquad B=\frac{\hbar}{4 \pi \theta c}\)</p>
+	<p>\(\Delta E_{rotazioanli} =2Bhc(J+1) \sim 10^{-5} - 10{-3} eV \)</p>
+	<p>\(k_B T_{ambiente} \sim 25 \times 10^{-3 } eV\)</p>
+<p>\(\frac{N_J}{N_{J=0}}= (2J+1) e^{-\frac{Bhc J(J+1)}{k_B T}} \)</p>
+	<p>\(\Delta J= \pm 1\)</p>
+<p>\(\frac{1}{\lamda}== \frac{\Delta E_{rot}}{hc}=2B(J+1)\)</p>
+	<p>\(\Delta \frac{1}{\lambda}=2B=\frac{\hbar}{2 \pi \theta c}\)</p>
+
+
     </body>  
 </html>
