@@ -779,17 +779,36 @@
   <p>possiamo costruire una <strong>cella unitaria</strong></p>
   <p>\(\Omega= \vec{T_1} \cdot ( \vec{T_2} \times \vec{T_3})\)</p>
   <p> cella primitiva \(\equiv\)  1 punto di Bravais</p>
-  <p>\(\text{Cristallo} \Rightarrow \beginb{cases} \vec{T_1},\vec{T_2},\vec{T_3} \qquad \text{generatore del reticolo di Bravais} \\ \vec{d_1} , \vec{d_2} ,\vec{d_3},  \cdots, \vec{d_{\nu}}  \qquad \text{(base)}\end{cases}\)</p>
-  <p>\(\begin{matrix} \vec{R^{(1)}= \vec{d_1}+ n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3} \\  \vec{R^{(2)}= \vec{d_2}+ n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3}  \\vdots \\  \vec{R^{(\nu)}= \vec{d_{\nu}} +n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3} \end{matrix}\)</p>
+  <p>\(\text{Cristallo} \Rightarrow \begin{cases} \vec{T_1},\vec{T_2},\vec{T_3} \qquad \text{generatore del reticolo di Bravais} \\ \vec{d_1} , \vec{d_2} ,\vec{d_3},  \cdots, \vec{d_{\nu}}  \qquad \text{(base)}\end{cases}\)</p>
+  <p>\(\begin{matrix} \vec{R^{(1)}}= \vec{d_1}+ n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3} \\  \vec{R^{(2)}}= \vec{d_2}+ n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3}  \\vdots \\  \vec{R^{(\nu)}}= \vec{d_{\nu}} +n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3} \end{matrix}\)</p>
   <p>Retyicolo Reciproco\(\boxed{\vec{T_i} \cdot \vec{G_j}= 2 \pi \delta_{ij}}\)</p>
   <p>\(\boxed{\vec{G_1}=   \frac{2 \pi}{\Omega} \vec{T_2} \times \vec{T_1}}\boxed{\vec{G_2}=   \frac{2 \pi}{\Omega} \vec{T_3} \times \vec{T_1}} \boxed{\vec{G_3}=   \frac{2 \pi}{\Omega} \vec{T_3} \times \vec{T_2}}\)</p>
   <p>Bravais: \(\vec{T_n}=n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3}\)</p>
   <p>Reciproco: \( \vec{G_m}=m_1 \vec{G_1}+m_2 \vec{G_2}+m_3 \vec{G_3}\)</p>
   <p>\(\vec{T_n} \cdot \vec{G_m}=(n_1 \vec{T_1}+n_2 \vec{T_2}+n_3 \vec{T_3}) \cdot ( m_1 \vec{G_1}+m_2 \vec{G_2}+m_3 \vec{G_3}) =2 \pi (n_1 m_1+n_2m_2+n_3m_3)= 2 \pi \mathscr{N}\)</p>
 <p>\(T_i \cdot G_j=2\pi \delta_{ij}\)</p>
-  <p>\(W (\vec{r})=e^{i \vec{G_m \cdot \vec{r}}\)</p>
+  <p>\(W (\vec{r})=e^{i \vec{G_m} \cdot \vec{r}}\)</p>
   <p>\(W(\vec{r}+\vec{T_n})=e^{i \vec{G_m} \cdot (\vec{r}+\vec{T_n})}=e^{i \vec{G_m} \cdot \vec{r}}e^{i \vec{G_m} \cdot \vec{T_n}}=e^{i \vec{G_m} \cdot \vec{r}}e^{i 2 \pi \mathscr{N}}=W(\vec{r})\)</p>
   <p>\(\vec{T_1},\vec{T_2},\vec{T_3}\)</p>
   <p>\(\boxed{f(\vec{r})=\sum_{\vec{G_m}}\tilde{f}_{\vec{G_m}}e^{i \vec{G_m} \cdot \vec{r}}  }\)</p>
+	<hr>
+<p>\(\vec{T_i}\cdot \vec{G_j}=2 \pi \delta_{ij}\)</p>
+	<p>\(V^{periodico} (\vec{r})=\sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}}e^{i \vec{G_m} \cdot \vec{r} }\)</p>
+<p>prima zona di Brillouin</p>
+<p>ogni punto \(\vec{q} \in \) Spazio Reciproco può essere scritto come: \( \vec{q}=\underset{\underset{\in 1 \ BZ}{\downarrow}} {\vec{k}}\vec{G_m}  \)</p>
+<p>\(\left[ \frac{\hat{p}^2}{2m}+V^{periodico} (\vec{r}) \right] \Psi ( \vec{r} ) = \Psi( \vec{r} )\)</p>
+	<p>\(W( \vec{r} )= \frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}\) con \( \vec{k}\) genrico \( \in \) Spazio Reciproco</p>
+	<p>\(\bra{\frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}}V^{periodico} ( \vec{r} ) \ket{\frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}}= \frac{1}{V} \int d^3 \vec{r} e^{i \vec{k} \cdot \vec{r}} \right[ \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}} e^{i \vec{G_m} \cdot \vec{r}}\right]e^{i \vec{k} \cdot \vec{r}}= \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}}\frac{1}{Vol} \int d^3 \vec{r} e^{i(-\vec{k'}+\vec{k}+\vec{G_m}) \cdot \vec{r}}= \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}} \delta (-\vec{k'}+\vec{k}+\vec{G_m})= \begin{cases} \tilde{V}_{\vec{G_m}} \qquad \text{se } \vec{k'}= \vec{k}+\vec{G_m} \\ 0 \qquad \text{altrimenti} \end{cases}\)</p>
+	<p>\( \vec{k_1} \in 1BZ  \qquad \frac{1}{\sqrt{V}}e^{i \vec{k_1} \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_1}) \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_2}) \cdot  \vec{r}},  \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_3}) \cdot  \vec{r}}, \cdots,  \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_m}) \cdot  \vec{r}} \)</p>
+	<p>\( \vec{k_2} \in 1BZ  \qquad \frac{1}{\sqrt{V}}e^{i \vec{k_2} \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_1}) \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_2}) \cdot  \vec{r}},  \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_3}) \cdot  \vec{r}}, \cdots,  \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_m}) \cdot  \vec{r}} \)</p>
+	<p>\(\vdots\)</p>
+		<p>\( \vec{k_n} \in 1BZ  \qquad \frac{1}{\sqrt{V}}e^{i \vec{k_n} \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_1}) \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_2}) \cdot  \vec{r}},  \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_3}) \cdot  \vec{r}}, \cdots,  \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_m}) \cdot  \vec{r}} \)</p>
+<p>\(\left[ \begin{matrix} \left[ \begin{matrix} \end{matrix} \right] \end{matrix} \right]\)</p>
+
+<p>\(\left[ \begin{matrix} \left[ \begin{matrix}\frac{\hbar^2 k_1^2}{2m} & \tilde{V}_{G_1} & \tilde{V}_{G_2} & \cdots & \tilde{V}_{G_m} \\ \vdots & \frac{\hbar^2 (k_1G_1)^2 }{2m} & \cdots \\ \vdots & & \ddots \\ &&&& \frac{\hbar^2 (k_1G_m)^2 }{2m}   \end{matrix} \right] &&& \\ & [\ddots]&& \\ && \ddots & \\ &&&  \left[ \begin{matrix}\frac{\hbar^2 k_n^2}{2m} & \tilde{V}_{G_1} & \tilde{V}_{G_2} & \cdots & \tilde{V}_{G_m} \\ \vdots & \frac{\hbar^2 (k_nG_1)^2 }{2m} & \cdots \\ \vdots & & \ddots \\ &&&& \frac{\hbar^2 (k_nG_m)^2 }{2m}   \end{matrix} \right] \end{matrix} \right]\Psi_{\vec{k} \in 1BZ}^{(m)}=E_{\vec{k} \in 1BZ}^{(m)}\Psi_{\vec{k} \in 1BZ}^{(m)} \text{con} m \text{indice di banda}\)</p>
+	
+<p>\(H_{\vec{k}} \Psi_{\vec{k}}^{(m)}=E_{\vec{k}}^{(m)} \Psi_{\vec{k}}^{(m)}\) con \(\vec{k} \in 1BZ\)</p>
+	<p>\(\Psi_{\vec{k}}^{(m)} ( \vec {r}) = \sum_{\vec{G_i}}a_{\vec{G_i}}^{(m)} (\vec{k}) \frac{1}{\sqrt{Vol}}e^{i(\vec{k} \cdot \vec{G_i}) \cdot \vec{r}}=e^{i \vec{k} \cdot \vec{r}} \sum_{\vec{G_i}}a_{\vec{G_i}}^{(m)} ( \vec{k}) e^{i \vec{G_i} \cdot \vec {r}}=e^{i \vec{k} \cdot \vec{r}} u_{m, \vec{k}} ( \vec{r} )\) con \(\vec{k} \in 1BZ\) e con \(u_{m, \vec{k}} (\vec{r})=u_{m, \vec{k}} (\vec{r}+\vec{T_m})\) periodica</p>
+	<p>il teorema di Bloch ci dice che in un sistema periodica gli autostati sono composte da una onda piana il cui vettore d'onda va scelta nella prima zona di Brillouin che va moltiplicato con una funziona periodica</p>
 </body>  
 </html>
