@@ -798,17 +798,48 @@
 <p>ogni punto \(\vec{q} \in \) Spazio Reciproco può essere scritto come: \( \vec{q}=\underset{\underset{\in 1 \ BZ}{\downarrow}} {\vec{k}}\vec{G_m}  \)</p>
 <p>\(\left[ \frac{\hat{p}^2}{2m}+V^{periodico} (\vec{r}) \right] \Psi ( \vec{r} ) = \Psi( \vec{r} )\)</p>
 	<p>\(W( \vec{r} )= \frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}\) con \( \vec{k}\) genrico \( \in \) Spazio Reciproco</p>
-	<p>\(\bra{\frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}}V^{periodico} ( \vec{r} ) \ket{\frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}}= \frac{1}{V} \int d^3 \vec{r} e^{i \vec{k} \cdot \vec{r}} \right[ \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}} e^{i \vec{G_m} \cdot \vec{r}}\right]e^{i \vec{k} \cdot \vec{r}}= \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}}\frac{1}{Vol} \int d^3 \vec{r} e^{i(-\vec{k'}+\vec{k}+\vec{G_m}) \cdot \vec{r}}= \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}} \delta (-\vec{k'}+\vec{k}+\vec{G_m})= \begin{cases} \tilde{V}_{\vec{G_m}} \qquad \text{se } \vec{k'}= \vec{k}+\vec{G_m} \\ 0 \qquad \text{altrimenti} \end{cases}\)</p>
+	<p>\(\bra{\frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}}V^{periodico} ( \vec{r} ) \ket{\frac{1}{\sqrt{V}}e^{i \vec{k} \cdot \vec{r}}}= \frac{1}{V} \int d^3 \vec{r} e^{i \vec{k} \cdot \vec{r}} \left[ \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}} e^{i \vec{G_m} \cdot \vec{r}}\right]e^{i \vec{k} \cdot \vec{r}}= \sum_{\vec{G_m}}  \tilde{V}_{\vec{G_m}}\frac{1}{Vol} \int d^3 \vec{r} e^{i(-\vec{k'}+\vec{k}+\vec{G_m}) \cdot \vec{r}}= \sum_{\vec{G_m}} \tilde{V}_{\vec{G_m}} \delta (-\vec{k'}+\vec{k}+\vec{G_m})= \begin{cases} \tilde{V}_{\vec{G_m}} \qquad \text{se } \vec{k'}= \vec{k}+\vec{G_m} \\ 0 \qquad \text{altrimenti} \end{cases}\)</p>
 	<p>\( \vec{k_1} \in 1BZ  \qquad \frac{1}{\sqrt{V}}e^{i \vec{k_1} \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_1}) \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_2}) \cdot  \vec{r}},  \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_3}) \cdot  \vec{r}}, \cdots,  \frac{1}{\sqrt{V}}e^{i (\vec{k_1}+\vec{G_m}) \cdot  \vec{r}} \)</p>
 	<p>\( \vec{k_2} \in 1BZ  \qquad \frac{1}{\sqrt{V}}e^{i \vec{k_2} \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_1}) \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_2}) \cdot  \vec{r}},  \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_3}) \cdot  \vec{r}}, \cdots,  \frac{1}{\sqrt{V}}e^{i (\vec{k_2}+\vec{G_m}) \cdot  \vec{r}} \)</p>
 	<p>\(\vdots\)</p>
 		<p>\( \vec{k_n} \in 1BZ  \qquad \frac{1}{\sqrt{V}}e^{i \vec{k_n} \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_1}) \cdot \vec{r}}, \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_2}) \cdot  \vec{r}},  \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_3}) \cdot  \vec{r}}, \cdots,  \frac{1}{\sqrt{V}}e^{i (\vec{k_n}+\vec{G_m}) \cdot  \vec{r}} \)</p>
-<p>\(\left[ \begin{matrix} \left[ \begin{matrix} \end{matrix} \right] \end{matrix} \right]\)</p>
 
-<p>\(\left[ \begin{matrix} \left[ \begin{matrix}\frac{\hbar^2 k_1^2}{2m} & \tilde{V}_{G_1} & \tilde{V}_{G_2} & \cdots & \tilde{V}_{G_m} \\ \vdots & \frac{\hbar^2 (k_1G_1)^2 }{2m} & \cdots \\ \vdots & & \ddots \\ &&&& \frac{\hbar^2 (k_1G_m)^2 }{2m}   \end{matrix} \right] &&& \\ & [\ddots]&& \\ && \ddots & \\ &&&  \left[ \begin{matrix}\frac{\hbar^2 k_n^2}{2m} & \tilde{V}_{G_1} & \tilde{V}_{G_2} & \cdots & \tilde{V}_{G_m} \\ \vdots & \frac{\hbar^2 (k_nG_1)^2 }{2m} & \cdots \\ \vdots & & \ddots \\ &&&& \frac{\hbar^2 (k_nG_m)^2 }{2m}   \end{matrix} \right] \end{matrix} \right]\Psi_{\vec{k} \in 1BZ}^{(m)}=E_{\vec{k} \in 1BZ}^{(m)}\Psi_{\vec{k} \in 1BZ}^{(m)} \text{con} m \text{indice di banda}\)</p>
+<p>\(\left[ \begin{matrix} \left[ \begin{matrix}\frac{\hbar^2 k_1^2}{2m} & \tilde{V}_{G_1} & \tilde{V}_{G_2} & \cdots & \tilde{V}_{G_m} \\ \vdots & \frac{\hbar^2 (k_1G_1)^2 }{2m} & \cdots \\ \vdots & & \ddots \\ &&&& \frac{\hbar^2 (k_1G_m)^2 }{2m}   \end{matrix} \right] &&& \\ & [\ddots]&& \\ && \ddots & \\ &&&  \left[ \begin{matrix}\frac{\hbar^2 k_n^2}{2m} & \tilde{V}_{G_1} & \tilde{V}_{G_2} & \cdots & \tilde{V}_{G_m} \\ \vdots & \frac{\hbar^2 (k_nG_1)^2 }{2m} & \cdots \\ \vdots & & \ddots \\ &&&& \frac{\hbar^2 (k_nG_m)^2 }{2m}   \end{matrix} \right] \end{matrix} \right]\Psi_{\vec{k} \in 1BZ}^{(m)}=E_{\vec{k} \in 1BZ}^{(m)}\Psi_{\vec{k} \in 1BZ}^{(m)} \text{con } m \text{ indice di banda}\)</p>
 	
 <p>\(H_{\vec{k}} \Psi_{\vec{k}}^{(m)}=E_{\vec{k}}^{(m)} \Psi_{\vec{k}}^{(m)}\) con \(\vec{k} \in 1BZ\)</p>
 	<p>\(\Psi_{\vec{k}}^{(m)} ( \vec {r}) = \sum_{\vec{G_i}}a_{\vec{G_i}}^{(m)} (\vec{k}) \frac{1}{\sqrt{Vol}}e^{i(\vec{k} \cdot \vec{G_i}) \cdot \vec{r}}=e^{i \vec{k} \cdot \vec{r}} \sum_{\vec{G_i}}a_{\vec{G_i}}^{(m)} ( \vec{k}) e^{i \vec{G_i} \cdot \vec {r}}=e^{i \vec{k} \cdot \vec{r}} u_{m, \vec{k}} ( \vec{r} )\) con \(\vec{k} \in 1BZ\) e con \(u_{m, \vec{k}} (\vec{r})=u_{m, \vec{k}} (\vec{r}+\vec{T_m})\) periodica</p>
 	<p>il teorema di Bloch ci dice che in un sistema periodica gli autostati sono composte da una onda piana il cui vettore d'onda va scelta nella prima zona di Brillouin che va moltiplicato con una funziona periodica</p>
+<hr>
+<p><strong>Regole di Dipolo</strong> \(\Delta \ell \pm 1 \qquad \Delta m_{\ell}=0,\pm 1 \qquad \Delta s=0\)</p>
+	<p>\(\Delta j=\overset{\text{proibita se } j_m=0 \rightarrow J_{fin}=0}{0},\pm 1 \qquad \Delta m_j=0\)</p>
+	<p>\(\bra{\Psi_{fin}} D \ket{\Psi_{in}}\)</p>
+	<p>\(\bra{j_{fin} m_{j_{fin}}} \overset{\text{tensore di rango 1}}{\begin{pmatrix} \hat{x} \\ \hat{y} \\ \hat{z} \end{pmatrix}} \ket{j_{in} m_{j_{in}}}=\bra{j_{fin} m_{j_{fin}}} \overset{\ell =1}{T_{\underset{-1,0,+1}{\hat{T}}}^{(1)}} \ket{j_{in} m_{j_{in}}}\)</p>
+	<p>\(z= \aprox  Y_{\ell=1}^{m_{\ell}=0}\)</p>
+	<p>\(Y_{\ell=1}^{m_{\ell}=\pm 1} = \frac{x \pm iy}{\sqrt{2}}\)</p>
+
+	<p>Teorema di Wagner</p>
+	<p>\(\bra{j_{fin} m_{j_{fin}}} \hat{T}_k^{(1)} \ket{j_{in} m_{j_{in}}}= \overset{costante indipendente dalla componente k=-1,0,+1}{\mathscr{N}} \cdot \bra{j_{fin} m_{j_{fin}}}  \ket{1,k; j_{in} m_{j_{in}}}\)</p>
+
+<p>\(\bra{j_{TOT} m_{j_{TOT}}}  \ell \ket{m_{\ell} ; s, m_s}\)</p>
+	<p> \(|\ell -s| \le  J_{TOT} \le  \ell +s \)</p>
+	<p>\(|j_{fin}-1| \le j_{TOT} \le j_{in}+1\)</p>
+	<p>\(|0-1| \le 0 \le 0+1\) abbiamo dimostrato che non è valida nel caso in cui \(j_{fin}=j{in}=0 \) </p>
+	<p>Il teorema di Block ci dice che  \( \Psi_{nk} ( \vec{r} ) = e^{i \vec{k} \cdot \vec{r}}u_{nk} ( \vec{r} ) \)</p>
+	<p> \(\vec{k} \in 1BZ\)</p>
+	<p>\(u_{nk} ( \vec{r}= u_{nk} ( \vec{r}+ \vec{T}_n \)</p>
+	<p>\(H_{\vec{k} \Psi_{\vec{k}}^{(n)} = E_{ \vec{k}}^{(n)} \Psi_{\vec{k}}^{(n)}\)</p>
+	<p> \(\left[ \begin{matrix} -\frac{\hbar^2}{2m}k^2 & \tilde{V}_{0,G_1}& \tilde{V}_{O,G_2} & \cdots \\  \tilde{V}_{G_1,0} \equiv  \tilde{V}_{0,G_1}^* & -\frac{\hbar^2}{2m} (\vec{k}+\vec{G_1})^2 &  \tilde{V}_{G_1,G_2} & \cdots \\ \tilde{V}_{G_2,0} &  \tilde{V}_{G_2,G_1} & -\frac{\hbar^2}{2m} (\vec{k}+\vec{G_2})^2  & \cdots \\ \vdots & \vdots & \vdots & \ddots \end{matrix} \right]\)</p>
+<p>\(\tilde{V}_{G_i,G_j}= \frac{1}{Vol \int d^3 \vec{r} V^{periodico} ( \vec{r} )  e^{ (\vec{G_i} \vec{G_j}) \cdot \vec{r}}}\)</p>
+
+	<p>\(\frac{\hbar^2}{2m} (k+\overset{\cdots,-2,-2,0,+1,+2}{m} \frac{2 \pi}{a} )^2 \qquad G_m =m \frac{2 \pi}{a}\)</p>
+	<p> \(\left[ \begin{matrix} -\frac{\hbar^2}{2m}k^2 & & & \\   & -\frac{\hbar^2}{2m} (\vec{k}+\vec{G_1})^2 &  &  \\  &   & -\frac{\hbar^2}{2m} (\vec{k}+\vec{G_2})^2  & \\  & &  & \ddots \end{matrix} 
+<p>--.- ..- . ... - ---  / -. --- -. / . / ..- -. / -.-. --- -.. .. -.-. . / -- --- .-. ... . </p>
+<p>Cosa vuol dire scegliere il numero di k?</p>
+	<p>Immagina una catena unidimensionale con passo reticolare a e ho n punti reticolari / n siti di lunghezza a (sto considerando il reticolo di Bravais). Stiamo considerando una superando una supercella con N cewlle unitarie. Per renderla infinita bisogna chiudere la catena come se sia una collona</p>
+	<p>\(\Psi ( x) =e^{ikx} u(x)\)</p>
+	<p>\(\Psi (x=0)=u(x=0)= \Psi(x=N \cdot a)=e^{ikN \cdot a} u (N \cdot a)\)</p>
+	<p>\(e^{ikN \cdot a }=1=e^{i 2 \pi n}\)</p>
+	<p>\(kN \cdot a=  2 \pi n \rightarrow k_n= \frac{2 \pi}{N \cdot a} \overset{n=0,2,\cdots ,N-1}{n}\)</p>
+	<p>Risposta: più punti k ci metto nel mio campionamento,  più otterrò un potenziale accurato (anche a raggio lungo)</p>
 </body>  
 </html>
